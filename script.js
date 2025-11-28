@@ -1,6 +1,7 @@
 const input = document.getElementById("musicas")
 const playlist = []
 
+//Upload Músicas
 input.addEventListener('change', (event) => {
     const arquivos = event.target.files
 
@@ -13,7 +14,10 @@ input.addEventListener('change', (event) => {
        
        playlist.push(musica)
     }
-      
+    
+    //Salva no localStorage
+    localStorage.setItem('playlist', JSON.stringify(playlist))
+    const playlists = JSON.parse(localStorage.getItem('playlist') || [])
 
     console.log(playlist)
 })
