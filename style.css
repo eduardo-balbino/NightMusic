@@ -5,11 +5,24 @@ button, img {
     width: 50px;
 }
 
-#input-file {
-    height: 80vh; /* Temporário */
+#pause-icon {
+    height: 43px;
+    width: 44px;
 }
 
+#input-file {
+    height: 89vh; /* Temporário */
+}
 
 #play-button {
     border-radius: 100px;
+}
+
+#player-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
 }
