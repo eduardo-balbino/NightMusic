@@ -1,0 +1,15 @@
+button, img {
+    all: unset;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+#input-file {
+    height: 80vh; /* Temporário */
+}
+
+
+#play-button {
+    border-radius: 100px;
+}

@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NightMusic</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body> 
-    <input type="file" id="musicas" multiple accept="audio/*">    
+
+<body>
+    <div id="input-file">
+        <input type="file" id="musicas" multiple accept="audio/*">
+        <audio id="audio-player"></audio>
+    </div>
+
+    <div>
+        <button id="play-button"><img id="play-icon" src="assets/icons/play-icon.png" alt="play-button"></button>
+        <button id="pause-button"><img id="pause-icon" src="assets/icons/pause-icon.png" alt="play-button"></button>
+        <button id="skip-button"><img id="play-icon" src="assets/icons/play-icon.png" alt="play-button"></button>
+        <button id="play-button"><img id="play-icon" src="assets/icons/play-icon.png" alt="play-button"></button>
+    </div>
+    
     <script src="script.js"></script>
 </body>
+
 </html>
