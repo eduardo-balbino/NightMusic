@@ -5,7 +5,25 @@ const btnPlay = document.getElementById("play-button")
 const btnPause = document.getElementById("pause-button")
 const btnSkip = document.getElementById("skip-button")
 const input = document.getElementById("musicas")
+
+
+// ---------- Estado ----------
 const playlist = []
+const musicaAtual = 0
+
+// ---------- Carregar playlist existente ----------
+const storage = localStorage.getItem("playlists")
+if(storage) {
+    playlist = JSON.parse(storage)
+}
+
+// ---------- Atualiza o audioPlayer com a música atual ----------
+function carregarMusica() {
+    if(playlist.length === 0) return
+
+    const musica = playlist[musicaAtual]
+    audioPlayer.src = musica.url
+} 
 
 
 // ---------- Upload ----------
@@ -21,14 +39,18 @@ input.addEventListener('change', (event) => {
         
         playlist.push(musica)
     }
-    
-    audioPlayer.src = url
 
     // Salvar
     localStorage.setItem('playlist', JSON.stringify(playlist))
-    const playlists = JSON.parse(localStorage.getItem('playlist') || [])
     
-    console.log(playlists)
+    
+    console.log('playlist:', playlist)
+   
+   
+    //Se for a primeira vez carrega a musica para tocar
+    if(playlist.length === arquivos.length) {
+        carregarMusica()
+    }
 })
 
 
