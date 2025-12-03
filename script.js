@@ -1,10 +1,10 @@
 // ---------- DOM ----------
-const audioPlayer = document.getElementById("audio-player")
-const btnReturn = document.getElementById("return-button")
-const btnPlay = document.getElementById("play-button")
-const btnPause = document.getElementById("pause-button")
-const btnSkip = document.getElementById("skip-button")
-const input = document.getElementById("musicas")
+const audioPlayer   = document.getElementById("audio-player")
+const btnReturn     = document.getElementById("return-button")
+const btnPlay       = document.getElementById("play-button")
+const btnPause      = document.getElementById("pause-button")
+const btnSkip       = document.getElementById("skip-button")
+const input         = document.getElementById("musicas")
 
 
 // ---------- Estado ----------
@@ -56,8 +56,8 @@ input.addEventListener('change', (event) => {
 
 // ---------- Botões ----------
 btnPlay.addEventListener('click', () => {
-    audioPlayer.play()
-    alert('play')
+    if (!audioPlayer.src) carregarMusica() 
+    audioPlayer.play() 
 })
 
 btnPause.addEventListener('click', () => {
