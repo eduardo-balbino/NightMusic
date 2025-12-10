@@ -47,7 +47,7 @@ input.addEventListener('change', (event) => {
     console.log('playlist:', playlist)
    
    
-    //Se for a primeira vez carrega a musica para tocar
+    // Se for a primeira vez carrega a musica para tocarr
     if(playlist.length === arquivos.length) {
         carregarMusica()
     }
@@ -62,4 +62,12 @@ btnPlay.addEventListener('click', () => {
 
 btnPause.addEventListener('click', () => {
     audioPlayer.pause()
+})
+
+btnReturn.addEventListener('click', () => {
+    alert('Funcionando em breve...')
+})
+
+btnSkip.addEventListener('click', () => {
+    alert('Funcionando em breve...')
 })
