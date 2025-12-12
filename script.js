@@ -65,9 +65,11 @@ btnPause.addEventListener('click', () => {
 })
 
 btnReturn.addEventListener('click', () => {
-    alert('Funcionando em breve...')
+    audioPlayer.pause()
+    musicaAtual++
 })
 
 btnSkip.addEventListener('click', () => {
-    alert('Funcionando em breve...')
+    audioPlayer.pause()
+    musicaAtual-- 
 })
