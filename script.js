@@ -5,7 +5,7 @@ const btnPlay       = document.getElementById("play-button")
 const btnPause      = document.getElementById("pause-button")
 const btnSkip       = document.getElementById("skip-button")
 const input         = document.getElementById("musicas")
-
+const centralList   = document.getElementById("central-list-ol") 
 
 // ---------- Estado ----------
 const playlist = []
@@ -29,25 +29,27 @@ function carregarMusica() {
 // ---------- Upload ----------
 input.addEventListener('change', (event) => {
     const arquivos = event.target.files
-    
+
     for (let arquivo of arquivos) {
-       const musica = {
-           id: crypto.randomUUID,
-           name: arquivo.name,
-           url: URL.createObjectURL(arquivo)
+        const musica = {
+            id: crypto.randomUUID,
+            name: arquivo.name,
+            url: URL.createObjectURL(arquivo)
         } 
         
         playlist.push(musica)
+
+        const li = document.createElement('li')
+        li.textContent = arquivo.name 
+        centralList.appendChild(li)
     }
 
     // Salvar
     localStorage.setItem('playlist', JSON.stringify(playlist))
-    
-    
-    console.log('playlist:', playlist)
-   
-   
-    // Se for a primeira vez carrega a musica para tocarr
+     
+    console.log('playlist:', playlist) 
+
+    // Se for a primeira vez carrega a musica para tocar
     if(playlist.length === arquivos.length) {
         carregarMusica()
     }
