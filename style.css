@@ -34,7 +34,7 @@ body {
   accent-color: #7c3aed;
 }
 #musicas::file-selector-button {
-  background: linear-gradient(90deg,#7c3aed,#06b6d4);
+  background: #1f2937;
   color: white;
   padding: 8px 14px;
   border: none;
