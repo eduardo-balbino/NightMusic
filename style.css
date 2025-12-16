@@ -18,7 +18,7 @@ body {
 #input-file {
     position: fixed;
     bottom: var(--player-bottom-gap);
-    left: 28px;
+    right: 28px;
     z-index: 40;
 }
 
@@ -128,6 +128,12 @@ body {
   text-align:center;
   font-size: 14px;
   line-height:1.4;
+}
+
+#side-list {
+  height: 875px;
+  width: 334px;
+  background-color: var(--card);
 }
 
 @media (max-height: 720px) {
