@@ -146,6 +146,39 @@ body{
   padding-top: 50px;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  background: #121826;
+  border-radius: 8px;
+  min-width: 160px;
+  padding: 8px 0;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #1e2538;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
 @media (max-width:768px){
   #side-list{
     width:72vw;
