@@ -129,7 +129,6 @@ body{
   line-height:1.4;
 }
 
-/* side list ajustado para menu lateral responsivo */
 #side-list{
   position:fixed;
   top:0;
@@ -140,6 +139,11 @@ body{
   box-shadow:4px 0 20px rgba(0,0,0,.35);
   overflow-y:auto;
   z-index:10;
+}
+
+#side-list ol {
+  padding-left: 50px;
+  padding-top: 50px;
 }
 
 @media (max-width:768px){
