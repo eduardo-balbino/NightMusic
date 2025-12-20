@@ -8,8 +8,8 @@ const input         = document.getElementById("musicas")
 const centralList   = document.getElementById("central-list-ol") 
 
 // ---------- Estado ----------
-const playlist = []
-const musicaAtual = 0
+let playlist = []
+let musicaAtual = 0
 
 // ---------- Carregar playlist existente ----------
 const storage = localStorage.getItem("playlists")
@@ -32,7 +32,7 @@ input.addEventListener('change', (event) => {
 
     for (let arquivo of arquivos) {
         const musica = {
-            id: crypto.randomUUID,
+            id: crypto.randomUUID(),
             name: arquivo.name,
             url: URL.createObjectURL(arquivo)
         } 
