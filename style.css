@@ -22,16 +22,6 @@ body {
   color: #e6eef8;
 }
 
-.dropdown-btn {
-  color: white;
-  text-decoration: none;
-  background-color: var(--bg);
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 14px;
-}
-
 #input-file {
   position: fixed;
   bottom: var(--player-bottom-gap);
@@ -153,82 +143,6 @@ body {
   text-align: center;
   font-size: 14px;
   line-height: 1.4;
-}
-
-#side-list {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: min(280px, 80vw);
-  height: 100vh;
-  background-color: var(--card);
-  box-shadow: 4px 0 20px rgba(0, 0, 0, .35);
-  overflow-y: auto;
-  z-index: 10;
-}
-
-#side-list ol {
-  padding-left: 50px;
-  padding-top: 50px;
-}
-
-/*
-#side-list .dropdown {
-  display: block;
-}
-
-#side-list .dropdown-btn {
-  display: block;
-  margin-top: 30px;
-}
-*/
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-
-  background: var(--bg);
-  border-radius: 8px;
-  min-width: 160px;
-  padding: 8px 0;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 10px 16px;
-  color: white;
-  text-decoration: none;
-}
-
-.dropdown-content a:hover {
-  background: #1e2538;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
-
-@media (max-width:768px) {
-  #side-list {
-    width: 72vw;
-    max-width: 260px;
-  }
-}
-
-@media (max-width:480px) {
-  #side-list {
-    width: 100vw;
-    max-width: none;
-  }
 }
 
 @media (max-height:720px) {
