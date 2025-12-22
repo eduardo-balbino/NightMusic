@@ -1,0 +1,24 @@
+{
+  "name": "nightmusic-backend",
+  "version": "0.1.0",
+  "description": "Backend for NightMusic music player",
+  "keywords": [
+    "music",
+    "backend",
+    "nodejs",
+    "express",
+    "api"
+  ],
+  "license": "MIT",
+  "author": "Eduardo B",
+  "type": "commonjs",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
