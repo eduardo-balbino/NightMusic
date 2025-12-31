@@ -1,26 +1,36 @@
-# 🎵 Local Playlist Player
+# 🎵 NightMusic – Backend
 
-A simple web application that allows users to **create playlists from local music files**, play tracks directly in the browser, and automatically save data using **localStorage** — no backend required.
-
----
-
-## 🚀 Features
-
-- 📂 Import audio files (MP3, WAV, OGG…)
-- 🎧 Built-in audio player (play, pause, next, previous)
-- 💾 Automatic persistence via localStorage
-- 🎵 Create and manage playlists
-- 🔁 Optional loop and shuffle
-- 🌙 Optional Dark / Light mode
+Backend do **NightMusic**, uma aplicação focada em gerenciamento e distribuição de conteúdo musical.  
+Este repositório contém a **API em produção**, construída com **Node.js**, **Express** e **ES Modules (ESM)**.
 
 ---
 
-## 🛠️ Technologies
+## 🚀 Status do Projeto
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- localStorage
-- URL.createObjectURL()
+- ✅ Backend em produção  
+- ✅ Estrutura modular de rotas  
+- ✅ Padrão ESM (`import/export`)  
+- 🔄 Em evolução contínua
 
-> No frameworks and no backend — works as a fully static project.
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Node.js** (v18+)
+- **Express**
+- **ES Modules (ESM)**
+- **JavaScript**
+- *(futuramente)* Banco de dados, autenticação e storage
+
+---
+
+## 📁 Estrutura do Projeto
+
+```bash
+backend/
+ ├─ src/
+ │   └─ server.js          # Arquivo principal do servidor
+ ├─ routes/
+ │   └─ user.routes.js     # Rotas de usuários
+ ├─ package.json
+ └─ README.md
