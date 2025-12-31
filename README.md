@@ -1,36 +1,139 @@
-# 🎵 NightMusic – Backend
+# NightMusic
 
-Backend do **NightMusic**, uma aplicação focada em gerenciamento e distribuição de conteúdo musical.  
-Este repositório contém a **API em produção**, construída com **Node.js**, **Express** e **ES Modules (ESM)**.
+NightMusic is a personal music player project focused on **learning backend fundamentals** while building a real, functional application.
 
----
-
-## 🚀 Status do Projeto
-
-- ✅ Backend em produção  
-- ✅ Estrutura modular de rotas  
-- ✅ Padrão ESM (`import/export`)  
-- 🔄 Em evolução contínua
+The project is developed incrementally, starting with a frontend-only prototype and evolving into a backend-driven system using **Node.js and Express**.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Project Goals
 
-- **Node.js** (v18+)
-- **Express**
-- **ES Modules (ESM)**
-- **JavaScript**
-- *(futuramente)* Banco de dados, autenticação e storage
+* Learn how frontend and backend communicate (HTTP / REST)
+* Implement real file uploads and data persistence
+* Understand backend architecture and project organization
+* Build a solid foundation before adding advanced features
+
+This project prioritizes **learning and clarity over shortcuts**.
 
 ---
 
-## 📁 Estrutura do Projeto
+## Current Version
+
+**v0.1.0 — Frontend Preview (Local Playlist)**
+
+This release represents an early frontend-only preview of the music player.
+
+### Features
+
+* Local music upload
+* Interactive playlist
+* Audio playback in the browser
+* Responsive user interface
+
+### Known Limitations
+
+* Music files do not persist after page reload
+* Songs must be re-added on every session
+* No backend or server-side storage is implemented yet
+
+These limitations are intentional and reflect browser security constraints.
+
+---
+
+## Technical Notes
+
+Modern browsers do not allow permanent access to local files for security reasons.
+
+* Audio files are loaded using temporary `blob:` URLs
+* These URLs only exist during the active session
+* Reloading the page invalidates all previously loaded files
+
+Persistent storage will be introduced through a backend in future versions.
+
+---
+
+## Tech Stack
+
+### Frontend
+
+* HTML5
+* CSS3
+* Vanilla JavaScript
+
+### Backend (in progress)
+
+* Node.js
+* Express.js
+* Multer (file uploads)
+* Filesystem-based persistence (initial phase)
+
+---
+
+## Development Setup
 
 ```bash
-backend/
- ├─ src/
- │   └─ server.js          # Arquivo principal do servidor
- ├─ routes/
- │   └─ user.routes.js     # Rotas de usuários
- ├─ package.json
- └─ README.md
+cd backend
+npm install
+npm run dev
+```
+
+Environment variables are defined in a `.env` file located at the backend root.
+
+Example:
+
+```env
+PORT=3000
+UPLOAD_DIR=src/storage/uploads
+```
+
+---
+
+## Roadmap
+
+### v0.2.0 — Backend Foundation
+
+* Express server setup
+* Health check endpoint
+* Static file serving
+
+### v0.3.0 — File Uploads
+
+* Audio upload via API
+* Persistent file storage
+* Playlist metadata persistence
+
+### v0.4.0 — Frontend and Backend Integration
+
+* Upload music from the frontend to the backend
+* Fetch playlists through the API
+* Play music directly from server URLs
+
+### Future Plans
+
+* Database integration
+* User authentication
+* Multiple playlists per user
+* Desktop application version
+
+---
+
+## Project Philosophy
+
+* Avoid unnecessary frameworks
+* Keep responsibilities clearly separated
+* Learn first, optimize later
+* Document limitations instead of hiding them
+
+---
+
+## License
+
+MIT License
+
+---
+
+## Author
+
+Eduardo B.
+
+This project is part of a personal learning journey into backend and fullstack development.
