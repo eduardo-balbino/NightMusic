@@ -1,5 +1,5 @@
 import express from 'express'
-import 'dotenv/config'
+import 'dotenv/config.js'
 import musicRouter from './routes/musics.routes.js'
 
 const app = express()
