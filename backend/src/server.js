@@ -1,6 +1,6 @@
 import express from 'express'
 import 'dotenv/config'
-import musicRouter from '../routes/musics.routes.js'
+import musicRouter from './routes/musics.routes.js'
 
 const app = express()
 const PORT = process.env.PORT || 3000
