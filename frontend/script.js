@@ -19,7 +19,9 @@ if (storage) {
 
 // ---------- Atualiza o audioPlayer com a música atual ----------
 function carregarMusica() {
-  if (playlist.length === 0) return;
+  if (playlist.length === 0) {
+    return;
+  }
 
   const musica = playlist[musicaAtual];
   audioPlayer.src = musica.url;
@@ -29,7 +31,7 @@ function carregarMusica() {
 input.addEventListener("change", (event) => {
   const arquivos = event.target.files;
 
-  for (let arquivo of arquivos) {
+  for (const arquivo of arquivos) {
     const musica = {
       id: crypto.randomUUID(),
       name: arquivo.name,
@@ -56,7 +58,9 @@ input.addEventListener("change", (event) => {
 
 // ---------- Botões ----------
 btnPlay.addEventListener("click", () => {
-  if (!audioPlayer.src) carregarMusica();
+  if (!audioPlayer.src) {
+    carregarMusica();
+  }
   audioPlayer.play();
 });
 

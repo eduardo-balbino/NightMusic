@@ -1,0 +1,34 @@
+{
+  "INCLUDE_EXCLUDE_RULES": {
+    "globalExcludeGlob": [
+      "node_modules/**",
+      "**/node_modules/**",
+      "dist/**",
+      "coverage/**",
+      "build/**",
+      "**/*.log",
+      "**/*.lock",
+      ".oraculo/**"
+    ],
+    "globalInclude": [],
+    "globalExclude": [],
+    "dirRules": {}
+  },
+  "ESTRUTURA_ARQUIVOS_RAIZ_MAX": 50,
+  "REPO_ARQUETIPO": "NightMusic",
+  "STRUCTURE_AUTO_FIX": false,
+  "REPORT_EXPORT_ENABLED": false,
+  "coverageGate": {
+    "lines": 80,
+    "functions": 80,
+    "branches": 75,
+    "statements": 80
+  },
+  "TYPE_SAFETY": {
+    "enabled": true,
+    "strictMode": false,
+    "autoFixMode": "conservative",
+    "skipLegitimate": true,
+    "confidenceThreshold": 95
+  }
+}

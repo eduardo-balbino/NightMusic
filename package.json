@@ -4,12 +4,16 @@
   "description": "A sample project using a local package",
   "scripts": {
     "diagnosticar": "oraculo diagnosticar",
-    "formatar": "oraculo formatar"
+    "formatar": "oraculo formatar",
+    "lint": "eslint . --ext .js"
   },
   "dependencies": {
-    "eslint": "^9.39.2",
     "minimatch": "^10.1.1",
     "oraculo": "file:oraculo-0.3.0.tgz",
     "prettier": "^3.7.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2"
   }
 }

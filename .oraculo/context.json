@@ -90,6 +90,38 @@
         "--write"
       ],
       "version": "0.3.0"
+    },
+    {
+      "id": "1767824860842-8e43eeffa2d08",
+      "timestamp": "2026-01-07T22:27:40.842Z",
+      "cwd": "/home/lopos/projetos/NightMusic",
+      "argv": [
+        "diagnosticar"
+      ],
+      "version": "0.3.0",
+      "ok": true,
+      "exitCode": 0,
+      "durationMs": 325
+    },
+    {
+      "id": "1767824919000-afc8e6fbaa2418",
+      "timestamp": "2026-01-07T22:28:39.000Z",
+      "cwd": "/home/lopos/projetos/NightMusic",
+      "argv": [
+        "formatar",
+        "--write"
+      ],
+      "version": "0.3.0"
+    },
+    {
+      "id": "1767825277292-0062be9785bf38",
+      "timestamp": "2026-01-07T22:34:37.292Z",
+      "cwd": "/home/lopos/projetos/NightMusic",
+      "argv": [
+        "formatar",
+        "--write"
+      ],
+      "version": "0.3.0"
     }
   ],
   "preferences": {}
