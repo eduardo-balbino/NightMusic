@@ -1,0 +1,13 @@
+{
+  "arquetipo": "desconhecido",
+  "arquivosRaiz": [
+    ".gitignore",
+    "LICENSE",
+    "README.md",
+    "oraculo-0.3.0.tgz",
+    "package.json"
+  ],
+  "confidence": 10,
+  "timestamp": "2026-01-07T19:24:45.029Z",
+  "version": 1
+}

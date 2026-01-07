@@ -1,0 +1,15 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "A sample project using a local package",
+  "scripts": {
+    "diagnosticar": "oraculo diagnosticar",
+    "formatar": "oraculo formatar"
+  },
+  "dependencies": {
+    "eslint": "^9.39.2",
+    "minimatch": "^10.1.1",
+    "oraculo": "file:oraculo-0.3.0.tgz",
+    "prettier": "^3.7.4"
+  }
+}
