@@ -1,9 +1,10 @@
 import express from 'express'
 import 'dotenv/config'
 import musicRouter from './routes/musics.routes.js'
+import connectDB from './database/database.js'
 
 const app = express()
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000 
 
 app.use(express.json())
 app.use('/musics', musicRouter)
