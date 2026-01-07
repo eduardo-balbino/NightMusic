@@ -80,6 +80,16 @@
         "--write"
       ],
       "version": "0.3.0"
+    },
+    {
+      "id": "1767824058988-905583648ab348",
+      "timestamp": "2026-01-07T22:14:18.988Z",
+      "cwd": "/home/lopos/projetos/NightMusic",
+      "argv": [
+        "formatar",
+        "--write"
+      ],
+      "version": "0.3.0"
     }
   ],
   "preferences": {}

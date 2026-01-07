@@ -49,6 +49,7 @@ MIT License
 Eduardo B.
 
 This project is part of a personal learning journey into backend and fullstack development.
+
 ````
 
 # NightMusic
@@ -190,3 +191,4 @@ MIT License
 Eduardo B.
 
 This project is part of a personal learning journey into backend and fullstack development.
+````
