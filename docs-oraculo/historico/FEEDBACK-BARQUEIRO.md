@@ -59,7 +59,7 @@ const configKey = `squad_role_${squadType.toLowerCase()}`;
 **Contexto:**
 
 ```typescript
-collector.on("collect", async (i) => {
+collector.on('collect', async (i) => {
   await i.deferUpdate();
   // ... código ...
 });

@@ -4,6 +4,8 @@ about: Sugira uma nova funcionalidade ou melhoria
 labels: enhancement
 ---
 
+> Proveniência e Autoria: Este arquivo integra o projeto NightMusic. Consulte LICENSE e README para mais informações.
+
 # 💡 Feature Request
 
 ## Descrição

@@ -59,7 +59,7 @@ Stack traces são exibidos apenas quando relevante:
 // Exibe stack trace em modo verbose ou debug
 if (err.stack) {
   if (opts?.verbose || config.DEV_MODE) {
-    log.info("Stack trace:");
+    log.info('Stack trace:');
     log.info(err.stack);
   }
 }
@@ -88,7 +88,7 @@ Stack trace: [completo]
 ```typescript
 // <typesDirectory>/comum/ocorrencias.ts (default: src/tipos)
 export interface OcorrenciaErroAnalista extends OcorrenciaAnalista {
-  tipo: "ERRO_ANALISTA";
+  tipo: 'ERRO_ANALISTA';
   stack?: string; // ✨ Stack trace opcional
 }
 
@@ -335,8 +335,8 @@ Para melhorar o sistema de erros:
          mensagem: `Falha: ${(error as Error).message}`,
          relPath,
          stack: (error as Error).stack, // ✨ Importante
-         origem: "meu-analista",
-       }),
+         origem: 'meu-analista',
+       })
      );
    }
    ```
@@ -345,7 +345,7 @@ Para melhorar o sistema de erros:
 
    ```typescript
    // ❌ Ruim
-   mensagem: "Erro";
+   mensagem: 'Erro';
 
    // ✅ Bom
    mensagem: `Falha ao analisar tipos em ${arquivo}: ${erro.message}`;

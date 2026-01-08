@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: ["main", "ita-dev"]
+    branches: ['main', 'ita-dev']
   pull_request:
-    branches: ["main", "ita-dev"]
+    branches: ['main', 'ita-dev']
 
 jobs:
   lint-and-test:
@@ -15,7 +15,7 @@ jobs:
       - name: Instalar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: '20'
       - name: Instalar dependências
         run: npm install
       - name: Rodar lint

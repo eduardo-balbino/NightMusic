@@ -29,7 +29,7 @@ Este guia documenta como produzir saídas consistentes no Oráculo usando os mó
 ### Importação
 
 ```ts
-import { log, ICONES_DIAGNOSTICO, CABECALHOS } from "@core/messages/index.js";
+import { log, ICONES_DIAGNOSTICO, CABECALHOS } from '@core/messages/index.js';
 ```
 
 ### Emissão não-JSON
@@ -50,10 +50,7 @@ if (opts.json) {
 ### Mensagens de sucesso/erro específicas
 
 ```ts
-import {
-  MENSAGENS_ERRO,
-  MENSAGENS_SUCESSO,
-} from "@core/messages/fix-types-messages.js";
+import { MENSAGENS_ERRO, MENSAGENS_SUCESSO } from '@core/messages/fix-types-messages.js';
 
 log.sucesso(MENSAGENS_SUCESSO.analiseConcluida);
 log.erro(MENSAGENS_ERRO.modulosNaoEncontrados(modulos));

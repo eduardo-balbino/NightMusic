@@ -1,7 +1,11 @@
+> Proveniência e Autoria: Este arquivo integra o projeto NightMusic. Consulte LICENSE e README para mais informações.
+
 ---
+
 name: Bug Report
 about: Relate um bug para ajudar a melhorar o projeto
 labels: bug
+
 ---
 
 # 🐞 Bug Report

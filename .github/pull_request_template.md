@@ -1,3 +1,5 @@
+# > Proveniência e Autoria: Este arquivo integra o projeto NightMusic. Consulte LICENSE e README para mais informações.
+
 # 📝 Pull Request
 
 ## Descrição

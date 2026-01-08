@@ -1,62 +1,7 @@
 [
   {
     "role": "user",
-    "content": "Execução CLI: diagnosticar",
-    "timestamp": "2026-01-07T19:24:44.830Z"
-  },
-  {
-    "role": "user",
-    "content": "Execução CLI: diagnosticar --json",
-    "timestamp": "2026-01-07T19:26:04.271Z"
-  },
-  {
-    "role": "user",
-    "content": "Execução CLI: formatar",
-    "timestamp": "2026-01-07T19:26:39.309Z"
-  },
-  {
-    "role": "user",
-    "content": "Execução CLI: formatar",
-    "timestamp": "2026-01-07T19:30:31.063Z"
-  },
-  {
-    "role": "user",
     "content": "Execução CLI: formatar --write",
-    "timestamp": "2026-01-07T19:30:52.042Z"
-  },
-  {
-    "role": "user",
-    "content": "Execução CLI: diagnosticar --json",
-    "timestamp": "2026-01-07T19:33:11.192Z"
-  },
-  {
-    "role": "user",
-    "content": "Execução CLI: diagnosticar --json",
-    "timestamp": "2026-01-07T19:34:37.486Z"
-  },
-  {
-    "role": "user",
-    "content": "Execução CLI: formatar --write",
-    "timestamp": "2026-01-07T19:36:22.136Z"
-  },
-  {
-    "role": "user",
-    "content": "Execução CLI: formatar --write",
-    "timestamp": "2026-01-07T22:14:18.985Z"
-  },
-  {
-    "role": "user",
-    "content": "Execução CLI: diagnosticar",
-    "timestamp": "2026-01-07T22:27:40.840Z"
-  },
-  {
-    "role": "user",
-    "content": "Execução CLI: formatar --write",
-    "timestamp": "2026-01-07T22:28:38.997Z"
-  },
-  {
-    "role": "user",
-    "content": "Execução CLI: formatar --write",
-    "timestamp": "2026-01-07T22:34:37.289Z"
+    "timestamp": "2026-01-08T17:03:09.993Z"
   }
 ]

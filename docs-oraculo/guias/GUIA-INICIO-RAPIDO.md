@@ -192,7 +192,7 @@ Use comentários inline para suprimir ocorrências específicas:
 const dados: any = respostaExterna;
 
 // @oraculo-disable hardcoded-secrets
-const configKey = "chave_configuracao_publica";
+const configKey = 'chave_configuracao_publica';
 ```
 
 ---
@@ -254,7 +254,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: "24"
+          node-version: '24'
 
       - name: Instalar Oráculo
         run: |

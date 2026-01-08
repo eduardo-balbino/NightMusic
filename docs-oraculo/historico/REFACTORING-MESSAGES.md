@@ -56,26 +56,26 @@ Criado arquivo centralizado contendo:
 
 ```typescript
 export const SeverityLevels = {
-  error: "erro",
-  warning: "aviso",
-  info: "info",
-  suggestion: "sugestao",
+  error: 'erro',
+  warning: 'aviso',
+  info: 'info',
+  suggestion: 'sugestao',
 };
 
 export const AnalystTypes = {
-  react: "react/regra",
-  reactHooks: "react-hooks/regra",
-  tailwind: "tailwindcss/regra",
-  css: "css/regra",
-  html: "html/regra",
+  react: 'react/regra',
+  reactHooks: 'react-hooks/regra',
+  tailwind: 'tailwindcss/regra',
+  css: 'css/regra',
+  html: 'html/regra',
 };
 
 export const AnalystOrigins = {
-  react: "analista-react",
-  reactHooks: "analista-react-hooks",
-  tailwind: "analista-tailwind",
-  css: "analista-css",
-  html: "analista-html",
+  react: 'analista-react',
+  reactHooks: 'analista-react-hooks',
+  tailwind: 'analista-tailwind',
+  css: 'analista-css',
+  html: 'analista-html',
 };
 ```
 
@@ -91,11 +91,7 @@ Exemplo antes/depois:
 
 ```typescript
 // ANTES
-warn(
-  'Link com target="_blank" sem rel="noreferrer"/"noopener".',
-  relPath,
-  line,
-);
+warn('Link com target="_blank" sem rel="noreferrer"/"noopener".', relPath, line);
 
 // DEPOIS
 warn(ReactMessages.linkTargetBlank, relPath, line);
