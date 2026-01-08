@@ -1,77 +1,75 @@
 // ---------- DOM ----------
-const audioPlayer   = document.getElementById("audio-player")
-const btnReturn     = document.getElementById("return-button")
-const btnPlay       = document.getElementById("play-button")
-const btnPause      = document.getElementById("pause-button")
-const btnSkip       = document.getElementById("skip-button")
-const input         = document.getElementById("musicas")
-const centralList   = document.getElementById("central-list-ol") 
+const audioPlayer = document.getElementById("audio-player");
+const btnReturn = document.getElementById("return-button");
+const btnPlay = document.getElementById("play-button");
+const btnPause = document.getElementById("pause-button");
+const btnSkip = document.getElementById("skip-button");
+const input = document.getElementById("musicas");
+const centralList = document.getElementById("central-list-ol");
 
 // ---------- Estado ----------
-let playlist = []
-let musicaAtual = 0
+let playlist = [];
+let musicaAtual = 0;
 
 // ---------- Carregar playlist existente ----------
-const storage = localStorage.getItem("playlists")
-if(storage) {
-    playlist = JSON.parse(storage)
+const storage = localStorage.getItem("playlists");
+if (storage) {
+  playlist = JSON.parse(storage);
 }
 
 // ---------- Atualiza o audioPlayer com a música atual ----------
 function carregarMusica() {
-    if(playlist.length === 0) return
+  if (playlist.length === 0) return;
 
-    const musica = playlist[musicaAtual]
-    audioPlayer.src = musica.url
-} 
-
+  const musica = playlist[musicaAtual];
+  audioPlayer.src = musica.url;
+}
 
 // ---------- Upload ----------
-input.addEventListener('change', (event) => {
-    const arquivos = event.target.files
+input.addEventListener("change", (event) => {
+  const arquivos = event.target.files;
 
-    for (let arquivo of arquivos) {
-        const musica = {
-            id: crypto.randomUUID(),
-            name: arquivo.name,
-            url: URL.createObjectURL(arquivo)
-        } 
-        
-        playlist.push(musica)
+  for (let arquivo of arquivos) {
+    const musica = {
+      id: crypto.randomUUID(),
+      name: arquivo.name,
+      url: URL.createObjectURL(arquivo),
+    };
 
-        const li = document.createElement('li')
-        li.textContent = arquivo.name 
-        centralList.appendChild(li)
-    }
+    playlist.push(musica);
 
-    // Salvar
-    localStorage.setItem('playlist', JSON.stringify(playlist))
-     
-    console.log('playlist:', playlist) 
+    const li = document.createElement("li");
+    li.textContent = arquivo.name;
+    centralList.appendChild(li);
+  }
 
-    // Se for a primeira vez carrega a musica para tocar
-    if(playlist.length === arquivos.length) {
-        carregarMusica()
-    }
-})
+  // Salvar
+  localStorage.setItem("playlist", JSON.stringify(playlist));
 
+  console.log("playlist:", playlist);
+
+  // Se for a primeira vez carrega a musica para tocar
+  if (playlist.length === arquivos.length) {
+    carregarMusica();
+  }
+});
 
 // ---------- Botões ----------
-btnPlay.addEventListener('click', () => {
-    if (!audioPlayer.src) carregarMusica() 
-    audioPlayer.play() 
-})
+btnPlay.addEventListener("click", () => {
+  if (!audioPlayer.src) carregarMusica();
+  audioPlayer.play();
+});
 
-btnPause.addEventListener('click', () => {
-    audioPlayer.pause()
-})
+btnPause.addEventListener("click", () => {
+  audioPlayer.pause();
+});
 
-btnReturn.addEventListener('click', () => {
-    audioPlayer.pause()
-    musicaAtual++
-})
+btnReturn.addEventListener("click", () => {
+  audioPlayer.pause();
+  musicaAtual++;
+});
 
-btnSkip.addEventListener('click', () => {
-    audioPlayer.pause()
-    musicaAtual-- 
-})
+btnSkip.addEventListener("click", () => {
+  audioPlayer.pause();
+  musicaAtual--;
+});

@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NightMusic</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/icons/Iconarchive-Fairy-Tale-Dark-Moon.512.png" type="image/x-icon">
@@ -19,19 +18,26 @@
     </div>
 
     <div id="input-file">
-        <input type="file" id="musicas" multiple accept="audio/*">
+      <input type="file" id="musicas" multiple accept="audio/*" />
     </div>
 
     <div id="player-icons">
-        <button id="return-button"><img id="return-icon" src="assets/icons/return-icon.png"></button>
-        <button id="play-button"><img id="play-icon" src="assets/icons/play-icon.png"></button>
-        <button id="pause-button" class="hidden"><img id="pause-icon" src="assets/icons/pause-icon.png"></button>
-        <button id="skip-button"><img id="skip-icon" src="assets/icons/skip-.png"></button>
+      <button id="return-button">
+        <img id="return-icon" src="assets/icons/return-icon.png" />
+      </button>
+      <button id="play-button">
+        <img id="play-icon" src="assets/icons/play-icon.png" />
+      </button>
+      <button id="pause-button" class="hidden">
+        <img id="pause-icon" src="assets/icons/pause-icon.png" />
+      </button>
+      <button id="skip-button">
+        <img id="skip-icon" src="assets/icons/skip-.png" />
+      </button>
     </div>
 
     <audio id="audio-player"></audio>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,1458 @@
+[
+  {
+    "analistas": [
+      {
+        "duracaoMs": 3.819547000000057,
+        "global": true,
+        "nome": "detector-estrutura",
+        "ocorrencias": 2
+      },
+      {
+        "duracaoMs": 20.660598000000164,
+        "global": true,
+        "nome": "sugestoes-contextuais",
+        "ocorrencias": 1
+      },
+      {
+        "duracaoMs": 4.217276999999967,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.28549400000019887,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.3385169999999107,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 1
+      },
+      {
+        "duracaoMs": 0.33070199999997385,
+        "global": false,
+        "nome": "detector-dependencias",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.29155100000002676,
+        "global": false,
+        "nome": "analista-funcoes-longas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.3607210000000123,
+        "global": false,
+        "nome": "analista-padroes-uso",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.3753700000002027,
+        "global": false,
+        "nome": "analista-comandos-cli",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.6270179999999073,
+        "global": false,
+        "nome": "todo-comments",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.2627629999999499,
+        "global": false,
+        "nome": "construcoes-sintaticas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.3571039999999357,
+        "global": false,
+        "nome": "codigo-fragil",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.19835699999998724,
+        "global": false,
+        "nome": "detector-duplicacoes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.16529700000000958,
+        "global": false,
+        "nome": "arquitetura",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 2.3120719999999437,
+        "global": false,
+        "nome": "seguranca",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 1.1669409999999516,
+        "global": false,
+        "nome": "documentacao",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.4444530000000668,
+        "global": false,
+        "nome": "analista-react",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.16669099999990067,
+        "global": false,
+        "nome": "analista-react-hooks",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.7898599999998623,
+        "global": false,
+        "nome": "analista-tailwind",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.2636539999998604,
+        "global": false,
+        "nome": "analista-css-in-js",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.5362589999999727,
+        "global": false,
+        "nome": "quick-fixes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.18138399999998,
+        "global": false,
+        "nome": "detector-dependencias",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.7356619999998202,
+        "global": false,
+        "nome": "analista-funcoes-longas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.1763300000000072,
+        "global": false,
+        "nome": "analista-padroes-uso",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.1586369999999988,
+        "global": false,
+        "nome": "analista-comandos-cli",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.3276570000000447,
+        "global": false,
+        "nome": "todo-comments",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.0834749999999076,
+        "global": false,
+        "nome": "construcoes-sintaticas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.0831959999998162,
+        "global": false,
+        "nome": "codigo-fragil",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.11207100000001446,
+        "global": false,
+        "nome": "detector-duplicacoes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.10148400000002766,
+        "global": false,
+        "nome": "arquitetura",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 1.0192939999999453,
+        "global": false,
+        "nome": "seguranca",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.8697290000000066,
+        "global": false,
+        "nome": "documentacao",
+        "ocorrencias": 1
+      },
+      {
+        "duracaoMs": 0.2483389999999872,
+        "global": false,
+        "nome": "analista-react",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.09435999999982414,
+        "global": false,
+        "nome": "analista-react-hooks",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.3521809999999732,
+        "global": false,
+        "nome": "analista-tailwind",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.11054699999999684,
+        "global": false,
+        "nome": "analista-css-in-js",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.10413199999993594,
+        "global": false,
+        "nome": "quick-fixes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 1.3993759999998474,
+        "global": false,
+        "nome": "analista-tailwind",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 2.249851000000035,
+        "global": false,
+        "nome": "analista-html",
+        "ocorrencias": 6
+      },
+      {
+        "duracaoMs": 0.12094600000000355,
+        "global": false,
+        "nome": "detector-dependencias",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.1404139999999643,
+        "global": false,
+        "nome": "analista-funcoes-longas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.11211699999989833,
+        "global": false,
+        "nome": "analista-padroes-uso",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.10190299999999297,
+        "global": false,
+        "nome": "analista-comandos-cli",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.5276069999999891,
+        "global": false,
+        "nome": "todo-comments",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.06200400000011541,
+        "global": false,
+        "nome": "construcoes-sintaticas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.058683999999857406,
+        "global": false,
+        "nome": "codigo-fragil",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.09880599999996775,
+        "global": false,
+        "nome": "detector-duplicacoes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.060332000000016706,
+        "global": false,
+        "nome": "arquitetura",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.5856159999998454,
+        "global": false,
+        "nome": "seguranca",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.22459699999990335,
+        "global": false,
+        "nome": "documentacao",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.3349789999999757,
+        "global": false,
+        "nome": "analista-react",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.11073400000009315,
+        "global": false,
+        "nome": "analista-react-hooks",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.09837799999991148,
+        "global": false,
+        "nome": "analista-tailwind",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.13253900000017893,
+        "global": false,
+        "nome": "analista-css-in-js",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.044878000000153406,
+        "global": false,
+        "nome": "quick-fixes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 19.16472900000008,
+        "global": false,
+        "nome": "analista-css",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.17911500000013802,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 2.5378840000000764,
+        "global": false,
+        "nome": "detector-markdown",
+        "ocorrencias": 1
+      },
+      {
+        "duracaoMs": 2.742868999999928,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 0
+      }
+    ],
+    "cacheAstHits": 0,
+    "cacheAstMiss": 5,
+    "tempoAnaliseMs": 337,
+    "tempoParsingMs": 52,
+    "timestamp": 1767813885372,
+    "totalArquivos": 20
+  },
+  {
+    "analistas": [
+      {
+        "duracaoMs": 3.5431069999999636,
+        "global": true,
+        "nome": "detector-estrutura",
+        "ocorrencias": 2
+      },
+      {
+        "duracaoMs": 19.104602999999997,
+        "global": true,
+        "nome": "sugestoes-contextuais",
+        "ocorrencias": 1
+      },
+      {
+        "duracaoMs": 4.915130999999974,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.2126940000000559,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.27508400000010624,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 1
+      },
+      {
+        "duracaoMs": 0.2650060000000849,
+        "global": false,
+        "nome": "detector-dependencias",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.2338239999999132,
+        "global": false,
+        "nome": "analista-funcoes-longas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.3877270000000408,
+        "global": false,
+        "nome": "analista-padroes-uso",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.44733899999982896,
+        "global": false,
+        "nome": "analista-comandos-cli",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.6112279999999828,
+        "global": false,
+        "nome": "todo-comments",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.2514160000000629,
+        "global": false,
+        "nome": "construcoes-sintaticas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.33425400000010086,
+        "global": false,
+        "nome": "codigo-fragil",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.3164130000000114,
+        "global": false,
+        "nome": "detector-duplicacoes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.24485600000002705,
+        "global": false,
+        "nome": "arquitetura",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 2.0125950000001467,
+        "global": false,
+        "nome": "seguranca",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 1.1679630000000998,
+        "global": false,
+        "nome": "documentacao",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.4633739999999307,
+        "global": false,
+        "nome": "analista-react",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.16181400000004942,
+        "global": false,
+        "nome": "analista-react-hooks",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.7468469999998888,
+        "global": false,
+        "nome": "analista-tailwind",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.273274999999785,
+        "global": false,
+        "nome": "analista-css-in-js",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.5416529999999966,
+        "global": false,
+        "nome": "quick-fixes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.2995309999998881,
+        "global": false,
+        "nome": "detector-dependencias",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.5663019999999506,
+        "global": false,
+        "nome": "analista-funcoes-longas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.12124900000003436,
+        "global": false,
+        "nome": "analista-padroes-uso",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.11772999999993772,
+        "global": false,
+        "nome": "analista-comandos-cli",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.3041569999998046,
+        "global": false,
+        "nome": "todo-comments",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.07134400000018104,
+        "global": false,
+        "nome": "construcoes-sintaticas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.07009999999991123,
+        "global": false,
+        "nome": "codigo-fragil",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.07858799999985422,
+        "global": false,
+        "nome": "detector-duplicacoes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.06870699999990393,
+        "global": false,
+        "nome": "arquitetura",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.8413920000000417,
+        "global": false,
+        "nome": "seguranca",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.792357999999922,
+        "global": false,
+        "nome": "documentacao",
+        "ocorrencias": 1
+      },
+      {
+        "duracaoMs": 0.22601800000006733,
+        "global": false,
+        "nome": "analista-react",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.08408699999995406,
+        "global": false,
+        "nome": "analista-react-hooks",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.34830200000010336,
+        "global": false,
+        "nome": "analista-tailwind",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.11189899999999398,
+        "global": false,
+        "nome": "analista-css-in-js",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.12430199999994329,
+        "global": false,
+        "nome": "quick-fixes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 1.2492090000000644,
+        "global": false,
+        "nome": "analista-tailwind",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 2.279637999999977,
+        "global": false,
+        "nome": "analista-html",
+        "ocorrencias": 6
+      },
+      {
+        "duracaoMs": 0.11890500000004067,
+        "global": false,
+        "nome": "detector-dependencias",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.1309519999999793,
+        "global": false,
+        "nome": "analista-funcoes-longas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.12990599999989172,
+        "global": false,
+        "nome": "analista-padroes-uso",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.10555300000009993,
+        "global": false,
+        "nome": "analista-comandos-cli",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.5431860000001052,
+        "global": false,
+        "nome": "todo-comments",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.06435399999986657,
+        "global": false,
+        "nome": "construcoes-sintaticas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.05918099999985316,
+        "global": false,
+        "nome": "codigo-fragil",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.1051519999998618,
+        "global": false,
+        "nome": "detector-duplicacoes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.12384800000018004,
+        "global": false,
+        "nome": "arquitetura",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.7833630000000085,
+        "global": false,
+        "nome": "seguranca",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.32881200000019817,
+        "global": false,
+        "nome": "documentacao",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.4929779999999937,
+        "global": false,
+        "nome": "analista-react",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.11383999999998196,
+        "global": false,
+        "nome": "analista-react-hooks",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.13156200000003082,
+        "global": false,
+        "nome": "analista-tailwind",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.17063499999994747,
+        "global": false,
+        "nome": "analista-css-in-js",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.05428899999992609,
+        "global": false,
+        "nome": "quick-fixes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 19.371933000000126,
+        "global": false,
+        "nome": "analista-css",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.1959229999999934,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 2.3908069999999952,
+        "global": false,
+        "nome": "detector-markdown",
+        "ocorrencias": 1
+      },
+      {
+        "duracaoMs": 2.8493959999998424,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 0
+      }
+    ],
+    "cacheAstHits": 0,
+    "cacheAstMiss": 5,
+    "tempoAnaliseMs": 336,
+    "tempoParsingMs": 52,
+    "timestamp": 1767813964764,
+    "totalArquivos": 20
+  },
+  {
+    "analistas": [
+      {
+        "duracaoMs": 3.7087549999999965,
+        "global": true,
+        "nome": "detector-estrutura",
+        "ocorrencias": 2
+      },
+      {
+        "duracaoMs": 5.235115000000064,
+        "global": true,
+        "nome": "sugestoes-contextuais",
+        "ocorrencias": 1
+      },
+      {
+        "duracaoMs": 3.892659999999978,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 1
+      },
+      {
+        "duracaoMs": 0.21755800000005365,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 1
+      },
+      {
+        "duracaoMs": 0.18835799999988012,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 1
+      },
+      {
+        "duracaoMs": 0.38580099999990125,
+        "global": false,
+        "nome": "detector-dependencias",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.3529959999998482,
+        "global": false,
+        "nome": "analista-funcoes-longas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.3518100000001141,
+        "global": false,
+        "nome": "analista-padroes-uso",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.40793799999983094,
+        "global": false,
+        "nome": "analista-comandos-cli",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.5488279999999577,
+        "global": false,
+        "nome": "todo-comments",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.2359310000001642,
+        "global": false,
+        "nome": "construcoes-sintaticas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.3279290000000401,
+        "global": false,
+        "nome": "codigo-fragil",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.16670899999985522,
+        "global": false,
+        "nome": "detector-duplicacoes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.16096599999991668,
+        "global": false,
+        "nome": "arquitetura",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 1.8805270000000291,
+        "global": false,
+        "nome": "seguranca",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 1.3143639999998413,
+        "global": false,
+        "nome": "documentacao",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.5826120000001538,
+        "global": false,
+        "nome": "analista-react",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.21638599999982944,
+        "global": false,
+        "nome": "analista-react-hooks",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 1.0335889999998926,
+        "global": false,
+        "nome": "analista-tailwind",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.27070800000001327,
+        "global": false,
+        "nome": "analista-css-in-js",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.5342309999998633,
+        "global": false,
+        "nome": "quick-fixes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.1831320000001142,
+        "global": false,
+        "nome": "detector-dependencias",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.5537759999999707,
+        "global": false,
+        "nome": "analista-funcoes-longas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.09290099999998347,
+        "global": false,
+        "nome": "analista-padroes-uso",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.07422200000019075,
+        "global": false,
+        "nome": "analista-comandos-cli",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.18672300000002906,
+        "global": false,
+        "nome": "todo-comments",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.04155300000002171,
+        "global": false,
+        "nome": "construcoes-sintaticas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.06660399999987021,
+        "global": false,
+        "nome": "codigo-fragil",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.05463200000008328,
+        "global": false,
+        "nome": "detector-duplicacoes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.04433200000016768,
+        "global": false,
+        "nome": "arquitetura",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.6666800000000421,
+        "global": false,
+        "nome": "seguranca",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.6750460000000658,
+        "global": false,
+        "nome": "documentacao",
+        "ocorrencias": 1
+      },
+      {
+        "duracaoMs": 0.21182699999985743,
+        "global": false,
+        "nome": "analista-react",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.08925700000008874,
+        "global": false,
+        "nome": "analista-react-hooks",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.35357199999998556,
+        "global": false,
+        "nome": "analista-tailwind",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.1080059999999321,
+        "global": false,
+        "nome": "analista-css-in-js",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.09834399999999732,
+        "global": false,
+        "nome": "quick-fixes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 1.1067300000001978,
+        "global": false,
+        "nome": "analista-tailwind",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 3.139490999999907,
+        "global": false,
+        "nome": "analista-html",
+        "ocorrencias": 6
+      },
+      {
+        "duracaoMs": 0.11900399999990441,
+        "global": false,
+        "nome": "detector-dependencias",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.19853199999988647,
+        "global": false,
+        "nome": "analista-funcoes-longas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.22918300000014824,
+        "global": false,
+        "nome": "analista-padroes-uso",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.11495899999999892,
+        "global": false,
+        "nome": "analista-comandos-cli",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.750725999999986,
+        "global": false,
+        "nome": "todo-comments",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.12105100000007951,
+        "global": false,
+        "nome": "construcoes-sintaticas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.13620200000013938,
+        "global": false,
+        "nome": "codigo-fragil",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.0692229999999654,
+        "global": false,
+        "nome": "detector-duplicacoes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.08259799999996176,
+        "global": false,
+        "nome": "arquitetura",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.72204899999997,
+        "global": false,
+        "nome": "seguranca",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.2660190000001421,
+        "global": false,
+        "nome": "documentacao",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.4013720000000376,
+        "global": false,
+        "nome": "analista-react",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.12161900000000969,
+        "global": false,
+        "nome": "analista-react-hooks",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.10145299999999224,
+        "global": false,
+        "nome": "analista-tailwind",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.13776999999981854,
+        "global": false,
+        "nome": "analista-css-in-js",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.047321999999894615,
+        "global": false,
+        "nome": "quick-fixes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 20.08689400000003,
+        "global": false,
+        "nome": "analista-css",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.10875800000007985,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 1.8489099999999326,
+        "global": false,
+        "nome": "detector-markdown",
+        "ocorrencias": 1
+      },
+      {
+        "duracaoMs": 2.8259550000000218,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 0
+      }
+    ],
+    "cacheAstHits": 0,
+    "cacheAstMiss": 5,
+    "tempoAnaliseMs": 141,
+    "tempoParsingMs": 52,
+    "timestamp": 1767814391457,
+    "totalArquivos": 19
+  },
+  {
+    "analistas": [
+      {
+        "duracaoMs": 3.5231410000000096,
+        "global": true,
+        "nome": "detector-estrutura",
+        "ocorrencias": 2
+      },
+      {
+        "duracaoMs": 5.274007000000097,
+        "global": true,
+        "nome": "sugestoes-contextuais",
+        "ocorrencias": 1
+      },
+      {
+        "duracaoMs": 4.908204000000069,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 1
+      },
+      {
+        "duracaoMs": 0.3664120000000821,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 1
+      },
+      {
+        "duracaoMs": 0.11911600000007638,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.43653100000005907,
+        "global": false,
+        "nome": "detector-dependencias",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.3665280000000166,
+        "global": false,
+        "nome": "analista-funcoes-longas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.5337770000001001,
+        "global": false,
+        "nome": "analista-padroes-uso",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.6292980000000625,
+        "global": false,
+        "nome": "analista-comandos-cli",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.8091500000000451,
+        "global": false,
+        "nome": "todo-comments",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.3853630000000976,
+        "global": false,
+        "nome": "construcoes-sintaticas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.6472719999999299,
+        "global": false,
+        "nome": "codigo-fragil",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.3098609999999553,
+        "global": false,
+        "nome": "detector-duplicacoes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.25774299999989125,
+        "global": false,
+        "nome": "arquitetura",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 2.760721999999987,
+        "global": false,
+        "nome": "seguranca",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.9825920000000679,
+        "global": false,
+        "nome": "documentacao",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.4446539999999004,
+        "global": false,
+        "nome": "analista-react",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.1592040000000452,
+        "global": false,
+        "nome": "analista-react-hooks",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.8106580000001031,
+        "global": false,
+        "nome": "analista-tailwind",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.25956799999994473,
+        "global": false,
+        "nome": "analista-css-in-js",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.5139979999999014,
+        "global": false,
+        "nome": "quick-fixes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.2911579999999958,
+        "global": false,
+        "nome": "detector-dependencias",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.8162649999999303,
+        "global": false,
+        "nome": "analista-funcoes-longas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.09479699999997138,
+        "global": false,
+        "nome": "analista-padroes-uso",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.07489800000007563,
+        "global": false,
+        "nome": "analista-comandos-cli",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.1981919999998354,
+        "global": false,
+        "nome": "todo-comments",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.04704300000003059,
+        "global": false,
+        "nome": "construcoes-sintaticas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.058354000000008455,
+        "global": false,
+        "nome": "codigo-fragil",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.04875499999980093,
+        "global": false,
+        "nome": "detector-duplicacoes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.04384499999991931,
+        "global": false,
+        "nome": "arquitetura",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.760485000000017,
+        "global": false,
+        "nome": "seguranca",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.8001039999999193,
+        "global": false,
+        "nome": "documentacao",
+        "ocorrencias": 1
+      },
+      {
+        "duracaoMs": 0.21489599999995335,
+        "global": false,
+        "nome": "analista-react",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.08770599999979822,
+        "global": false,
+        "nome": "analista-react-hooks",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.36399500000015905,
+        "global": false,
+        "nome": "analista-tailwind",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.11382299999991119,
+        "global": false,
+        "nome": "analista-css-in-js",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.10303699999985838,
+        "global": false,
+        "nome": "quick-fixes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 1.1541600000000471,
+        "global": false,
+        "nome": "analista-tailwind",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 3.2698120000000017,
+        "global": false,
+        "nome": "analista-html",
+        "ocorrencias": 6
+      },
+      {
+        "duracaoMs": 0.12159100000008038,
+        "global": false,
+        "nome": "detector-dependencias",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.20090800000002673,
+        "global": false,
+        "nome": "analista-funcoes-longas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.18875600000001214,
+        "global": false,
+        "nome": "analista-padroes-uso",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.11078199999997196,
+        "global": false,
+        "nome": "analista-comandos-cli",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.5475839999999152,
+        "global": false,
+        "nome": "todo-comments",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.06147800000007919,
+        "global": false,
+        "nome": "construcoes-sintaticas",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.07632899999998699,
+        "global": false,
+        "nome": "codigo-fragil",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.06504800000016076,
+        "global": false,
+        "nome": "detector-duplicacoes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.09078999999996995,
+        "global": false,
+        "nome": "arquitetura",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.6764279999999872,
+        "global": false,
+        "nome": "seguranca",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.23353099999985716,
+        "global": false,
+        "nome": "documentacao",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.3423119999999926,
+        "global": false,
+        "nome": "analista-react",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.11220299999990857,
+        "global": false,
+        "nome": "analista-react-hooks",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.0960250000000542,
+        "global": false,
+        "nome": "analista-tailwind",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.13001599999984137,
+        "global": false,
+        "nome": "analista-css-in-js",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.04404399999998532,
+        "global": false,
+        "nome": "quick-fixes",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 20.74619699999994,
+        "global": false,
+        "nome": "analista-css",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 0.11939100000017788,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 2.2496790000000146,
+        "global": false,
+        "nome": "detector-markdown",
+        "ocorrencias": 0
+      },
+      {
+        "duracaoMs": 3.2549470000001293,
+        "global": false,
+        "nome": "analista-prettier",
+        "ocorrencias": 0
+      }
+    ],
+    "cacheAstHits": 0,
+    "cacheAstMiss": 5,
+    "tempoAnaliseMs": 149,
+    "tempoParsingMs": 52,
+    "timestamp": 1767814477761,
+    "totalArquivos": 19
+  }
+]
