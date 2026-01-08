@@ -3,3 +3,6 @@ architecture-folder.txt
 .env
 node_modules
 .oraculo
+.next
+dist
+build
