@@ -1,12 +1,9 @@
-// db.js
-const mongoose = require('mongoose');
-require('dotenv').config(); // Carrega as variáveis de ambiente
+import mongoose from 'mongoose'
+import dotenv from 'dotenv'
 
-const connectDB = async () => {
+const connectdb = async () => {
     try {
-        await mongoose.connect(process.env.MONGO_URI, {
-      // useNewUrlParser: true, // Desnecessário em versões recentes
-      // useUnifiedTopology: true, // Desnecessário em versões recentes
+        await mongoose.connect(process.env.MONGODB_URI, {
         });
     console.log('Conectado ao MongoDB com sucesso!');
     } catch (error) {
@@ -15,4 +12,4 @@ const connectDB = async () => {
     }
 };
 
-module.exports = connectDB;
+export default connectdb;

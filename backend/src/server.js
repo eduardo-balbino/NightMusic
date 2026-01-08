@@ -1,12 +1,16 @@
 import express from 'express'
-import 'dotenv/config'
+import dotenv from 'dotenv/config'
 import musicRouter from './routes/musics.routes.js'
-import connectDB from './database/database.js'
+import connectdb from './database/database.js'
+
+await connectdb()
 
 const app = express()
 const PORT = process.env.PORT || 3000 
+const mongoDBURI = process.env.MONGODB_URI;
 
 app.use(express.json())
+
 app.use('/musics', musicRouter)
 
 app.get('/health', (req, res) => {
