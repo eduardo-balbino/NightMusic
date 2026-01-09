@@ -9,3 +9,11 @@ export async function login(creds: Creds) {
   if (!res.ok) throw new Error('Unauthorized');
   return res.json();
 }
+
+export async function logout() {
+  try {
+    await fetch('/api/auth/logout', { method: 'POST' });
+  } catch (e) {
+    // ignore
+  }
+}
