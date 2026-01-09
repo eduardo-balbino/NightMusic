@@ -2,7 +2,13 @@
   "name": "nightmusic-backend",
   "version": "0.1.0",
   "description": "Backend for NightMusic music player",
-  "keywords": ["music", "backend", "nodejs", "express", "api"],
+  "keywords": [
+    "music",
+    "backend",
+    "nodejs",
+    "express",
+    "api"
+  ],
   "license": "MIT",
   "author": "Eduardo B",
   "type": "module",

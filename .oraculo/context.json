@@ -2,8 +2,28 @@
   "schemaVersion": 1,
   "lastRuns": [
     {
-      "id": "1767813884832-608017b784fca8",
-      "timestamp": "2026-01-07T19:24:44.832Z",
+      "id": "1767918199253-68a4d15095814",
+      "timestamp": "2026-01-09T00:23:19.253Z",
+      "cwd": "/home/lopos/projetos/NightMusic",
+      "argv": [
+        "formatar",
+        "--write"
+      ],
+      "version": "0.3.0"
+    },
+    {
+      "id": "1767918624172-a6fdcdf450d468",
+      "timestamp": "2026-01-09T00:30:24.172Z",
+      "cwd": "/home/lopos/projetos/NightMusic",
+      "argv": [
+        "formatar",
+        "--write"
+      ],
+      "version": "0.3.0"
+    },
+    {
+      "id": "1767919595029-42806d787ef3a",
+      "timestamp": "2026-01-09T00:46:35.029Z",
       "cwd": "/home/lopos/projetos/NightMusic",
       "argv": [
         "diagnosticar"
@@ -11,39 +31,11 @@
       "version": "0.3.0",
       "ok": true,
       "exitCode": 0,
-      "durationMs": 553
+      "durationMs": 40717
     },
     {
-      "id": "1767813964273-acd6990374a8d",
-      "timestamp": "2026-01-07T19:26:04.273Z",
-      "cwd": "/home/lopos/projetos/NightMusic",
-      "argv": [
-        "diagnosticar",
-        "--json"
-      ],
-      "version": "0.3.0"
-    },
-    {
-      "id": "1767813999311-1bba1171bd0c88",
-      "timestamp": "2026-01-07T19:26:39.311Z",
-      "cwd": "/home/lopos/projetos/NightMusic",
-      "argv": [
-        "formatar"
-      ],
-      "version": "0.3.0"
-    },
-    {
-      "id": "1767814231064-ba36aae522127",
-      "timestamp": "2026-01-07T19:30:31.064Z",
-      "cwd": "/home/lopos/projetos/NightMusic",
-      "argv": [
-        "formatar"
-      ],
-      "version": "0.3.0"
-    },
-    {
-      "id": "1767814252044-37a59fa4b34898",
-      "timestamp": "2026-01-07T19:30:52.044Z",
+      "id": "1767919643356-e150c972d96f8",
+      "timestamp": "2026-01-09T00:47:23.356Z",
       "cwd": "/home/lopos/projetos/NightMusic",
       "argv": [
         "formatar",
@@ -52,32 +44,29 @@
       "version": "0.3.0"
     },
     {
-      "id": "1767814391194-44f085b17f19f",
-      "timestamp": "2026-01-07T19:33:11.194Z",
+      "id": "1767919660656-85d4f50bc76b7",
+      "timestamp": "2026-01-09T00:47:40.656Z",
       "cwd": "/home/lopos/projetos/NightMusic",
       "argv": [
-        "diagnosticar",
-        "--json"
+        "otimizar"
       ],
       "version": "0.3.0"
     },
     {
-      "id": "1767814477488-a259bb7bfb5f08",
-      "timestamp": "2026-01-07T19:34:37.488Z",
+      "id": "1767919670451-3b49f2fae60ca8",
+      "timestamp": "2026-01-09T00:47:50.451Z",
       "cwd": "/home/lopos/projetos/NightMusic",
       "argv": [
-        "diagnosticar",
-        "--json"
+        "--help"
       ],
       "version": "0.3.0"
     },
     {
-      "id": "1767814582138-6d406112f28d4",
-      "timestamp": "2026-01-07T19:36:22.138Z",
+      "id": "1767919687510-98e465a5360cb",
+      "timestamp": "2026-01-09T00:48:07.510Z",
       "cwd": "/home/lopos/projetos/NightMusic",
       "argv": [
-        "formatar",
-        "--write"
+        "otimizar-svg"
       ],
       "version": "0.3.0"
     }
