@@ -134,8 +134,8 @@ body {
   filter: brightness(0) invert(1);
 }
 
-/* Center wrapper */
-#center-wrapper {
+/* Center wrapper / form container */
+.center-wrapper {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -151,8 +151,66 @@ body {
   pointer-events: none;
 }
 
-#center-wrapper > * {
+.center-wrapper > * {
   pointer-events: auto;
+}
+
+.form {
+  width: 40%;
+  min-width: 200px;
+  background-color: #1A2745;
+  padding: 20px;
+}
+
+.form > input {
+  margin-bottom: 8px;
+  padding: 10px 5px;
+  width: 100%;
+}
+
+.form > label {
+  margin-block: 12px 6px;
+  display: inline-block;
+}
+
+.submit-btn {
+  background-color: #3C6A28;
+  padding-block: 8px;
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #518F36;
+  transition: .3s background-color ease-in-out;
+}
+
+.error-msg {
+  color: red;
+  font-size: .85rem;
+}
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  z-index: 30;
+  padding: 8px;
+  max-width: 95vw;
+  width: 100%;
+  pointer-events: none;
+}
+
+.center-wrapper>* {
+  pointer-events: auto
 }
 
 #site-logo-central {
@@ -185,9 +243,8 @@ body {
   padding: 28px 8px;
 }
 
-/* Responsive */
-@media (height <= 720px) {
-  #center-wrapper {
+@media (max-height: 720px) {
+  .center-wrapper {
     transform: translate(-50%, calc(-50% - (var(--player-height) / 2)));
   }
   #central-list {
