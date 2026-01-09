@@ -1,20 +1,20 @@
-'use client';
+"use client";
 
-import { useRef, useState } from 'react';
-import type { ChangeEvent } from 'react';
-import logo from './assets/icons/Iconarchive-Fairy-Tale-Dark-Moon.512.png';
-import playIcon from './assets/icons/play-icon.png';
-import pauseIcon from './assets/icons/pause-icon.png';
-import skipIcon from './assets/icons/skip-.png';
-import returnIcon from './assets/icons/return-icon.png';
+import { useRef, useState } from "react";
+import type { ChangeEvent } from "react";
+import logo from "./assets/icons/Iconarchive-Fairy-Tale-Dark-Moon.512.png";
+import playIcon from "./assets/icons/play-icon.png";
+import pauseIcon from "./assets/icons/pause-icon.png";
+import skipIcon from "./assets/icons/skip-.png";
+import returnIcon from "./assets/icons/return-icon.png";
 
 type Track = { id: string; name: string; url: string };
 
 export default function Page(): JSX.Element | null {
   // Mock de autenticação simples
-  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() => {
-    if (typeof window !== 'undefined') {
-      return Boolean(localStorage.getItem('nm_token'));
+  const [isAuthenticated, _setIsAuthenticated] = useState<boolean>(() => {
+    if (typeof window !== "undefined") {
+      return Boolean(localStorage.getItem("nm_token"));
     }
     return false;
   });
@@ -27,7 +27,7 @@ export default function Page(): JSX.Element | null {
   // Handler para arquivos
   const handleFiles = (e: ChangeEvent<HTMLInputElement>) => {
     const files = Array.from(e.target.files ?? []);
-    if (files.length === 0) return;
+    if (files.length === 0) {return;}
 
     const novas: Track[] = files.map((file) => ({
       id: crypto.randomUUID(),
@@ -45,8 +45,8 @@ export default function Page(): JSX.Element | null {
   };
 
   const play = () => {
-    if (!audioRef.current) return;
-    if (playlist.length === 0) return; // nothing to play
+    if (!audioRef.current) {return;}
+    if (playlist.length === 0) {return;} // nothing to play
 
     if (!audioRef.current.src) {
       audioRef.current.src = playlist[0].url;
@@ -56,14 +56,13 @@ export default function Page(): JSX.Element | null {
     try {
       audioRef.current.play();
       setIsPlaying(true);
-    } catch (e) {
-      console.error('Audio play failed:', e);
+    } catch (_e) {
       setIsPlaying(false);
     }
   };
 
   const pause = () => {
-    if (!audioRef.current) return;
+    if (!audioRef.current) {return;}
     audioRef.current.pause();
     setIsPlaying(false);
   };
@@ -79,8 +78,8 @@ export default function Page(): JSX.Element | null {
   };
 
   if (!isAuthenticated) {
-    if (typeof window !== 'undefined') {
-      window.location.href = '/login';
+    if (typeof window !== "undefined") {
+      window.location.href = "/login";
     }
     return null;
   }
@@ -101,7 +100,7 @@ export default function Page(): JSX.Element | null {
           ) : (
             <ol className="playlist">
               {playlist.map((m, idx) => (
-                <li key={m.id} className={`playlist-item ${idx === currentIndex ? 'current' : ''}`}>
+                <li key={m.id} className={`playlist-item ${idx === currentIndex ? "current" : ""}`}>
                   {m.name}
                 </li>
               ))}
