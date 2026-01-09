@@ -69,6 +69,36 @@
         "otimizar-svg"
       ],
       "version": "0.3.0"
+    },
+    {
+      "id": "1767929547955-f551986641c038",
+      "timestamp": "2026-01-09T03:32:27.955Z",
+      "cwd": "/home/lopos/projetos/NightMusic",
+      "argv": [
+        "formatar",
+        "--write"
+      ],
+      "version": "0.3.0"
+    },
+    {
+      "id": "1767930239062-20be0d7b7884a8",
+      "timestamp": "2026-01-09T03:43:59.062Z",
+      "cwd": "/home/lopos/projetos/NightMusic",
+      "argv": [
+        "formatar",
+        "--write"
+      ],
+      "version": "0.3.0"
+    },
+    {
+      "id": "1767930639844-0c7b741edacb68",
+      "timestamp": "2026-01-09T03:50:39.844Z",
+      "cwd": "/home/lopos/projetos/NightMusic",
+      "argv": [
+        "formatar",
+        "--write"
+      ],
+      "version": "0.3.0"
     }
   ],
   "preferences": {}

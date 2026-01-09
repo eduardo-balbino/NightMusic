@@ -12,7 +12,7 @@ type Track = { id: string; name: string; url: string };
 
 export default function Page(): JSX.Element | null {
   // Mock de autenticação simples
-  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() => {
+  const [isAuthenticated, _setIsAuthenticated] = useState<boolean>(() => {
     if (typeof window !== 'undefined') {
       return Boolean(localStorage.getItem('nm_token'));
     }
@@ -27,7 +27,9 @@ export default function Page(): JSX.Element | null {
   // Handler para arquivos
   const handleFiles = (e: ChangeEvent<HTMLInputElement>) => {
     const files = Array.from(e.target.files ?? []);
-    if (files.length === 0) return;
+    if (files.length === 0) {
+      return;
+    }
 
     const novas: Track[] = files.map((file) => ({
       id: crypto.randomUUID(),
@@ -45,8 +47,12 @@ export default function Page(): JSX.Element | null {
   };
 
   const play = () => {
-    if (!audioRef.current) return;
-    if (playlist.length === 0) return; // nothing to play
+    if (!audioRef.current) {
+      return;
+    }
+    if (playlist.length === 0) {
+      return;
+    } // nothing to play
 
     if (!audioRef.current.src) {
       audioRef.current.src = playlist[0].url;
@@ -56,14 +62,15 @@ export default function Page(): JSX.Element | null {
     try {
       audioRef.current.play();
       setIsPlaying(true);
-    } catch (e) {
-      console.error('Audio play failed:', e);
+    } catch {
       setIsPlaying(false);
     }
   };
 
   const pause = () => {
-    if (!audioRef.current) return;
+    if (!audioRef.current) {
+      return;
+    }
     audioRef.current.pause();
     setIsPlaying(false);
   };

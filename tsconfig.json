@@ -18,6 +18,14 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["app/components/*"],
+      "@services/*": ["app/services/*"],
+      "@hooks/*": ["app/hooks/*"],
+      "@styles/*": ["app/styles/*"],
+      "@app/*": ["app/*"]
+    },
     "strictNullChecks": true
   },
   "include": [

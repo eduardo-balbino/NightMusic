@@ -1,42 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/icons/Iconarchive-Fairy-Tale-Dark-Moon.512.png" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/icons/Iconarchive-Fairy-Tale-Dark-Moon.512.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<body>
-
+  <body>
     <div class="center-wrapper">
-    <h1>Sign Up</h1>
-    
-    <form action="" class="form" id="register-form" novalidate> <!--Colocar URL do server que vai processar o formulário-->
-    
+      <h1>Sign Up</h1>
+
+      <form action="" class="form" id="register-form" novalidate>
+        <!--Colocar URL do server que vai processar o formulário-->
+
         <label for="user-name">Name</label>
-        <br>
-        <input type="text" id="user-name" name="user-name" placeholder="enter your name" required>
-    <br>
+        <br />
+        <input type="text" id="user-name" name="user-name" placeholder="enter your name" required />
+        <br />
         <label for="email">Email</label>
-        <br>
-        <input type="email" id="email" name="email" placeholder="enter an email" required>
-    <br>
+        <br />
+        <input type="email" id="email" name="email" placeholder="enter an email" required />
+        <br />
         <label for="user-name">Password</label>
-        <br>
-        <input type="password" id="password" name="password" placeholder="enter a password" required>
-    <br>
+        <br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="enter a password"
+          required
+        />
+        <br />
         <label for="user-name">Confirm Password</label>
-        <br>
-        <input type="password" id="confirm-password" name="confirm-password" placeholder="enter your password again" required>
-   <br>
+        <br />
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          placeholder="enter your password again"
+          required
+        />
+        <br />
         <button type="submit" class="submit-btn" id="submit-form">Sign Up</button>
-    </form>
-    <small>Already have an account? <a href="#">Sign In</a></small> <!--Colocar link para a página de login-->
+      </form>
+      <small>Already have an account? <a href="#">Sign In</a></small>
+      <!--Colocar link para a página de login-->
     </div>
     <script src="form-script.js"></script>
-</body>
-
+  </body>
 </html>

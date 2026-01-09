@@ -1,4 +1,6 @@
 import js from '@eslint/js';
+import tsParser from '@typescript-eslint/parser';
+import tsPlugin from '@typescript-eslint/eslint-plugin';
 
 export default [
   js.configs.recommended,
@@ -31,6 +33,43 @@ export default [
         crypto: 'readonly',
         URL: 'readonly',
       },
+    },
+  },
+  // TypeScript/TSX support
+  {
+    files: ['**/*.ts', '**/*.tsx'],
+    languageOptions: {
+      parser: tsParser,
+      parserOptions: {
+        ecmaVersion: 2022,
+        sourceType: 'module',
+        ecmaFeatures: { jsx: true },
+      },
+      globals: {
+        // DOM & runtime globals commonly used in Next.js
+        window: 'readonly',
+        document: 'readonly',
+        localStorage: 'readonly',
+        fetch: 'readonly',
+        Request: 'readonly',
+        Blob: 'readonly',
+        File: 'readonly',
+        HTMLInputElement: 'readonly',
+        HTMLAudioElement: 'readonly',
+        JSX: 'readonly',
+        URL: 'readonly',
+      },
+    },
+    plugins: { '@typescript-eslint': tsPlugin },
+    rules: {
+      'no-undef': 'off',
+      'no-unused-vars': 'off',
+      'no-console': 'error',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
+      ],
+      '@typescript-eslint/explicit-module-boundary-types': 'off',
     },
   },
 ];

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { login as loginService, logout as logoutService } from '../services/auth';
+import { login as loginService, logout as logoutService } from '@services/auth.js';
 
 const useAuth = () => {
   const [user, setUser] = useState(null);
@@ -9,7 +9,7 @@ const useAuth = () => {
       const userData = await loginService(credentials);
       setUser(userData);
       return userData;
-    } catch (error) {
+    } catch {
       throw new Error('Login failed');
     }
   };

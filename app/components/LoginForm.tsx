@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation.js';
 import TextInput from './TextInput.js';
-import { login } from '../services/auth.js';
+import { login } from '@services/auth.js';
 
 export default function LoginForm() {
   const [username, setUsername] = useState('');
@@ -18,9 +18,11 @@ export default function LoginForm() {
     setLoading(true);
     try {
       const data = await login({ username, password });
-      if (typeof window !== 'undefined') localStorage.setItem('nm_token', data.token);
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('nm_token', data.token);
+      }
       router.push('/dashboard');
-    } catch (err) {
+    } catch {
       setError('Credenciais inválidas');
     } finally {
       setLoading(false);
