@@ -2,14 +2,14 @@
   "compilerOptions": {
     "target": "ES2022",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true,
-    "strict": false,
-    "noEmit": true,
+    "strict": true,
+    "noEmit": false,
     "incremental": true,
-    "module": "nodenext",
+    "module": "NodeNext",
     "esModuleInterop": true,
-    "moduleResolution": "nodenext",
+    "moduleResolution": "NodeNext",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
@@ -19,6 +19,8 @@
       }
     ],
     "baseUrl": ".",
+    "rootDir": ".",
+    "outDir": "dist",
     "paths": {
       "@components/*": ["app/components/*"],
       "@services/*": ["app/services/*"],
@@ -26,7 +28,8 @@
       "@styles/*": ["app/styles/*"],
       "@app/*": ["app/*"]
     },
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "ignoreDeprecations": "6.0"
   },
   "include": [
     "next-env.d.ts",

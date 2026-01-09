@@ -48,5 +48,40 @@
     "role": "user",
     "content": "Execução CLI: formatar --write",
     "timestamp": "2026-01-09T03:50:39.842Z"
+  },
+  {
+    "role": "user",
+    "content": "Execução CLI: diagnosticar",
+    "timestamp": "2026-01-09T14:27:51.460Z"
+  },
+  {
+    "role": "user",
+    "content": "Execução CLI: formatar --write",
+    "timestamp": "2026-01-09T14:29:16.788Z"
+  },
+  {
+    "role": "user",
+    "content": "Execução CLI: diagnosticar",
+    "timestamp": "2026-01-09T14:29:23.203Z"
+  },
+  {
+    "role": "user",
+    "content": "Execução CLI: diagnosticar --json",
+    "timestamp": "2026-01-09T14:30:49.494Z"
+  },
+  {
+    "role": "user",
+    "content": "Execução CLI: diagnosticar --full --json",
+    "timestamp": "2026-01-09T14:31:23.856Z"
+  },
+  {
+    "role": "user",
+    "content": "Execução CLI: diagnosticar --json",
+    "timestamp": "2026-01-09T14:33:00.459Z"
+  },
+  {
+    "role": "user",
+    "content": "Execução CLI: formatar --write",
+    "timestamp": "2026-01-09T14:43:00.927Z"
   }
 ]

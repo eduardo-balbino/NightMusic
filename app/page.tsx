@@ -1,20 +1,20 @@
-'use client';
+"use client";
 
-import { useRef, useState } from 'react';
-import type { ChangeEvent } from 'react';
-import logo from './assets/icons/Iconarchive-Fairy-Tale-Dark-Moon.512.png';
-import playIcon from './assets/icons/play-icon.png';
-import pauseIcon from './assets/icons/pause-icon.png';
-import skipIcon from './assets/icons/skip-.png';
-import returnIcon from './assets/icons/return-icon.png';
+import { useRef, useState } from "react";
+import type { ChangeEvent } from "react";
+import logo from "./assets/icons/Iconarchive-Fairy-Tale-Dark-Moon.512.png";
+import playIcon from "./assets/icons/play-icon.png";
+import pauseIcon from "./assets/icons/pause-icon.png";
+import skipIcon from "./assets/icons/skip-.png";
+import returnIcon from "./assets/icons/return-icon.png";
 
 type Track = { id: string; name: string; url: string };
 
 export default function Page(): JSX.Element | null {
   // Mock de autenticação simples
   const [isAuthenticated, _setIsAuthenticated] = useState<boolean>(() => {
-    if (typeof window !== 'undefined') {
-      return Boolean(localStorage.getItem('nm_token'));
+    if (typeof window !== "undefined") {
+      return Boolean(localStorage.getItem("nm_token"));
     }
     return false;
   });
@@ -86,8 +86,8 @@ export default function Page(): JSX.Element | null {
   };
 
   if (!isAuthenticated) {
-    if (typeof window !== 'undefined') {
-      window.location.href = '/login';
+    if (typeof window !== "undefined") {
+      window.location.href = "/login";
     }
     return null;
   }
@@ -108,7 +108,7 @@ export default function Page(): JSX.Element | null {
           ) : (
             <ol className="playlist">
               {playlist.map((m, idx) => (
-                <li key={m.id} className={`playlist-item ${idx === currentIndex ? 'current' : ''}`}>
+                <li key={m.id} className={`playlist-item ${idx === currentIndex ? "current" : ""}`}>
                   {m.name}
                 </li>
               ))}

@@ -54,8 +54,8 @@ npm run oraculo:diagnosticar
 
 ```typescript
 // src/bot/bin/bot.ts (linhas 20-21)
-import perfilQuizComponente from '@/bot/handlers/perfil-quiz-componente.js';
-import squadQuizComponente from '@/bot/handlers/squad-quiz-componente.js';
+import perfilQuizComponente from "@/bot/handlers/perfil-quiz-componente.js";
+import squadQuizComponente from "@/bot/handlers/squad-quiz-componente.js";
 
 // Linhas 40-41 - Registro dos componentes
 registry.register(perfilQuizComponente);
@@ -478,10 +478,10 @@ registry.register(handler); // ✅ handler deve ser considerado "usado"
 
 ```typescript
 // test/example.test.ts
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from "vitest";
 
-describe('Test', () => {
-  it('works', () => expect(true).toBe(true));
+describe("Test", () => {
+  it("works", () => expect(true).toBe(true));
 });
 // ✅ Não deve reportar como "órfão"
 ```
@@ -490,7 +490,7 @@ describe('Test', () => {
 
 ```typescript
 // test/mock.test.ts
-const mockUser: any = { id: '123' }; // ✅ any é aceitável em testes
+const mockUser: any = { id: "123" }; // ✅ any é aceitável em testes
 ```
 
 ---

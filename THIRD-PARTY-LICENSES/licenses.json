@@ -1,0 +1,703 @@
+{
+  "@img/colour@1.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/lovell/colour",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/@img/colour",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/@img/colour/LICENSE.md"
+  },
+  "@img/sharp-libvips-linux-x64@1.2.4": {
+    "licenses": "LGPL-3.0-or-later",
+    "repository": "https://github.com/lovell/sharp-libvips",
+    "publisher": "Lovell Fuller",
+    "email": "npm@lovell.info",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/@img/sharp-libvips-linux-x64",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/@img/sharp-libvips-linux-x64/README.md"
+  },
+  "@img/sharp-libvips-linuxmusl-x64@1.2.4": {
+    "licenses": "LGPL-3.0-or-later",
+    "repository": "https://github.com/lovell/sharp-libvips",
+    "publisher": "Lovell Fuller",
+    "email": "npm@lovell.info",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/@img/sharp-libvips-linuxmusl-x64",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/@img/sharp-libvips-linuxmusl-x64/README.md"
+  },
+  "@img/sharp-linux-x64@0.34.5": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/lovell/sharp",
+    "publisher": "Lovell Fuller",
+    "email": "npm@lovell.info",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/@img/sharp-linux-x64",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/@img/sharp-linux-x64/LICENSE"
+  },
+  "@img/sharp-linuxmusl-x64@0.34.5": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/lovell/sharp",
+    "publisher": "Lovell Fuller",
+    "email": "npm@lovell.info",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/@img/sharp-linuxmusl-x64",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/@img/sharp-linuxmusl-x64/LICENSE"
+  },
+  "@isaacs/balanced-match@4.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/isaacs/balanced-match",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/@isaacs/balanced-match",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/@isaacs/balanced-match/LICENSE.md"
+  },
+  "@isaacs/brace-expansion@5.0.0": {
+    "licenses": "MIT",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/@isaacs/brace-expansion",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/@isaacs/brace-expansion/LICENSE"
+  },
+  "@next/env@16.1.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/vercel/next.js",
+    "publisher": "Next.js Team",
+    "email": "support@vercel.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/@next/env",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/@next/env/README.md"
+  },
+  "@next/swc-linux-x64-gnu@16.1.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/vercel/next.js",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/@next/swc-linux-x64-gnu",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/@next/swc-linux-x64-gnu/README.md"
+  },
+  "@next/swc-linux-x64-musl@16.1.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/vercel/next.js",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/@next/swc-linux-x64-musl",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/@next/swc-linux-x64-musl/README.md"
+  },
+  "@swc/helpers@0.5.15": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/swc-project/swc",
+    "publisher": "강동윤",
+    "email": "kdy1997.dev@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/@swc/helpers",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/@swc/helpers/LICENSE"
+  },
+  "accepts@2.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/accepts",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/accepts",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/accepts/LICENSE"
+  },
+  "baseline-browser-mapping@2.9.13": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/web-platform-dx/baseline-browser-mapping",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/baseline-browser-mapping",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/baseline-browser-mapping/LICENSE.txt"
+  },
+  "body-parser@2.2.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/expressjs/body-parser",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/body-parser",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/body-parser/LICENSE"
+  },
+  "bytes@3.1.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/visionmedia/bytes.js",
+    "publisher": "TJ Holowaychuk",
+    "email": "tj@vision-media.ca",
+    "url": "http://tjholowaychuk.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/bytes",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/bytes/LICENSE"
+  },
+  "call-bind-apply-helpers@1.0.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ljharb/call-bind-apply-helpers",
+    "publisher": "Jordan Harband",
+    "email": "ljharb@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/call-bind-apply-helpers",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/call-bind-apply-helpers/LICENSE"
+  },
+  "call-bound@1.0.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ljharb/call-bound",
+    "publisher": "Jordan Harband",
+    "email": "ljharb@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/call-bound",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/call-bound/LICENSE"
+  },
+  "caniuse-lite@1.0.30001763": {
+    "licenses": "CC-BY-4.0",
+    "repository": "https://github.com/browserslist/caniuse-lite",
+    "publisher": "Ben Briggs",
+    "email": "beneb.info@gmail.com",
+    "url": "http://beneb.info",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/caniuse-lite",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/caniuse-lite/LICENSE"
+  },
+  "client-only@0.0.1": {
+    "licenses": "MIT",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/client-only"
+  },
+  "content-disposition@1.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/content-disposition",
+    "publisher": "Douglas Christopher Wilson",
+    "email": "doug@somethingdoug.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/content-disposition",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/content-disposition/LICENSE"
+  },
+  "content-type@1.0.5": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/content-type",
+    "publisher": "Douglas Christopher Wilson",
+    "email": "doug@somethingdoug.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/content-type",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/content-type/LICENSE"
+  },
+  "cookie-signature@1.2.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/visionmedia/node-cookie-signature",
+    "publisher": "TJ Holowaychuk",
+    "email": "tj@learnboost.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/cookie-signature",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/cookie-signature/LICENSE"
+  },
+  "cookie@0.7.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/cookie",
+    "publisher": "Roman Shtylman",
+    "email": "shtylman@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/cookie",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/cookie/LICENSE"
+  },
+  "debug@4.4.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/debug-js/debug",
+    "publisher": "Josh Junon",
+    "url": "https://github.com/qix-",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/debug",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/debug/LICENSE"
+  },
+  "depd@2.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/dougwilson/nodejs-depd",
+    "publisher": "Douglas Christopher Wilson",
+    "email": "doug@somethingdoug.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/depd",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/depd/LICENSE"
+  },
+  "detect-libc@2.1.2": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/lovell/detect-libc",
+    "publisher": "Lovell Fuller",
+    "email": "npm@lovell.info",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/detect-libc",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/detect-libc/LICENSE"
+  },
+  "dotenv@17.2.3": {
+    "licenses": "BSD-2-Clause",
+    "repository": "https://github.com/motdotla/dotenv",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/dotenv",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/dotenv/LICENSE"
+  },
+  "dunder-proto@1.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/es-shims/dunder-proto",
+    "publisher": "Jordan Harband",
+    "email": "ljharb@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/dunder-proto",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/dunder-proto/LICENSE"
+  },
+  "ee-first@1.1.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jonathanong/ee-first",
+    "publisher": "Jonathan Ong",
+    "email": "me@jongleberry.com",
+    "url": "http://jongleberry.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/ee-first",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/ee-first/LICENSE"
+  },
+  "encodeurl@2.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/pillarjs/encodeurl",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/encodeurl",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/encodeurl/LICENSE"
+  },
+  "es-define-property@1.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ljharb/es-define-property",
+    "publisher": "Jordan Harband",
+    "email": "ljharb@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/es-define-property",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/es-define-property/LICENSE"
+  },
+  "es-errors@1.3.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ljharb/es-errors",
+    "publisher": "Jordan Harband",
+    "email": "ljharb@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/es-errors",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/es-errors/LICENSE"
+  },
+  "es-object-atoms@1.1.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ljharb/es-object-atoms",
+    "publisher": "Jordan Harband",
+    "email": "ljharb@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/es-object-atoms",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/es-object-atoms/LICENSE"
+  },
+  "escape-html@1.0.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/component/escape-html",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/escape-html",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/escape-html/LICENSE"
+  },
+  "etag@1.8.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/etag",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/etag",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/etag/LICENSE"
+  },
+  "express@5.2.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/expressjs/express",
+    "publisher": "TJ Holowaychuk",
+    "email": "tj@vision-media.ca",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/express",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/express/LICENSE"
+  },
+  "finalhandler@2.1.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/pillarjs/finalhandler",
+    "publisher": "Douglas Christopher Wilson",
+    "email": "doug@somethingdoug.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/finalhandler",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/finalhandler/LICENSE"
+  },
+  "forwarded@0.2.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/forwarded",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/forwarded",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/forwarded/LICENSE"
+  },
+  "fresh@2.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/fresh",
+    "publisher": "TJ Holowaychuk",
+    "email": "tj@vision-media.ca",
+    "url": "http://tjholowaychuk.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/fresh",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/fresh/LICENSE"
+  },
+  "function-bind@1.1.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/Raynos/function-bind",
+    "publisher": "Raynos",
+    "email": "raynos2@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/function-bind",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/function-bind/LICENSE"
+  },
+  "get-intrinsic@1.3.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ljharb/get-intrinsic",
+    "publisher": "Jordan Harband",
+    "email": "ljharb@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/get-intrinsic",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/get-intrinsic/LICENSE"
+  },
+  "get-proto@1.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ljharb/get-proto",
+    "publisher": "Jordan Harband",
+    "email": "ljharb@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/get-proto",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/get-proto/LICENSE"
+  },
+  "gopd@1.2.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ljharb/gopd",
+    "publisher": "Jordan Harband",
+    "email": "ljharb@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/gopd",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/gopd/LICENSE"
+  },
+  "has-symbols@1.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/inspect-js/has-symbols",
+    "publisher": "Jordan Harband",
+    "email": "ljharb@gmail.com",
+    "url": "http://ljharb.codes",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/has-symbols",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/has-symbols/LICENSE"
+  },
+  "hasown@2.0.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/inspect-js/hasOwn",
+    "publisher": "Jordan Harband",
+    "email": "ljharb@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/hasown",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/hasown/LICENSE"
+  },
+  "http-errors@2.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/http-errors",
+    "publisher": "Jonathan Ong",
+    "email": "me@jongleberry.com",
+    "url": "http://jongleberry.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/http-errors",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/http-errors/LICENSE"
+  },
+  "iconv-lite@0.7.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/pillarjs/iconv-lite",
+    "publisher": "Alexander Shtuchkin",
+    "email": "ashtuchkin@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/iconv-lite",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/iconv-lite/LICENSE"
+  },
+  "inherits@2.0.4": {
+    "licenses": "ISC",
+    "repository": "https://github.com/isaacs/inherits",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/inherits",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/inherits/LICENSE"
+  },
+  "ipaddr.js@1.9.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/whitequark/ipaddr.js",
+    "publisher": "whitequark",
+    "email": "whitequark@whitequark.org",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/ipaddr.js",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/ipaddr.js/LICENSE"
+  },
+  "is-promise@4.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/then/is-promise",
+    "publisher": "ForbesLindesay",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/is-promise",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/is-promise/LICENSE"
+  },
+  "math-intrinsics@1.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/es-shims/math-intrinsics",
+    "publisher": "Jordan Harband",
+    "email": "ljharb@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/math-intrinsics",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/math-intrinsics/LICENSE"
+  },
+  "media-typer@1.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/media-typer",
+    "publisher": "Douglas Christopher Wilson",
+    "email": "doug@somethingdoug.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/media-typer",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/media-typer/LICENSE"
+  },
+  "merge-descriptors@2.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/sindresorhus/merge-descriptors",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/merge-descriptors",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/merge-descriptors/license"
+  },
+  "mime-db@1.54.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/mime-db",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/mime-db",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/mime-db/LICENSE"
+  },
+  "mime-types@3.0.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/mime-types",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/mime-types",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/mime-types/LICENSE"
+  },
+  "minimatch@10.1.1": {
+    "licenses": "BlueOak-1.0.0",
+    "repository": "https://github.com/isaacs/minimatch",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "url": "http://blog.izs.me",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/minimatch",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/minimatch/LICENSE.md"
+  },
+  "ms@2.1.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/vercel/ms",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/ms",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/ms/license.md"
+  },
+  "nanoid@3.3.11": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ai/nanoid",
+    "publisher": "Andrey Sitnik",
+    "email": "andrey@sitnik.ru",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/nanoid",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/nanoid/LICENSE"
+  },
+  "negotiator@1.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/negotiator",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/negotiator",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/negotiator/LICENSE"
+  },
+  "next@16.1.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/vercel/next.js",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/next",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/next/license.md"
+  },
+  "nightmusic-frontend@0.1.0": {
+    "licenses": "UNLICENSED",
+    "private": true,
+    "path": "/home/lopos/projetos/NightMusic",
+    "licenseFile": "/home/lopos/projetos/NightMusic/LICENSE"
+  },
+  "object-inspect@1.13.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/inspect-js/object-inspect",
+    "publisher": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/object-inspect",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/object-inspect/LICENSE"
+  },
+  "on-finished@2.4.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/on-finished",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/on-finished",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/on-finished/LICENSE"
+  },
+  "once@1.4.0": {
+    "licenses": "ISC",
+    "repository": "https://github.com/isaacs/once",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "url": "http://blog.izs.me/",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/once",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/once/LICENSE"
+  },
+  "parseurl@1.3.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/pillarjs/parseurl",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/parseurl",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/parseurl/LICENSE"
+  },
+  "path-to-regexp@8.3.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/pillarjs/path-to-regexp",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/path-to-regexp",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/path-to-regexp/LICENSE"
+  },
+  "picocolors@1.1.1": {
+    "licenses": "ISC",
+    "repository": "https://github.com/alexeyraspopov/picocolors",
+    "publisher": "Alexey Raspopov",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/picocolors",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/picocolors/LICENSE"
+  },
+  "postcss@8.4.31": {
+    "licenses": "MIT",
+    "repository": "https://github.com/postcss/postcss",
+    "publisher": "Andrey Sitnik",
+    "email": "andrey@sitnik.ru",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/next/node_modules/postcss",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/next/node_modules/postcss/LICENSE"
+  },
+  "proxy-addr@2.0.7": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/proxy-addr",
+    "publisher": "Douglas Christopher Wilson",
+    "email": "doug@somethingdoug.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/proxy-addr",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/proxy-addr/LICENSE"
+  },
+  "qs@6.14.1": {
+    "licenses": "BSD-3-Clause",
+    "repository": "https://github.com/ljharb/qs",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/qs",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/qs/LICENSE.md"
+  },
+  "range-parser@1.2.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/range-parser",
+    "publisher": "TJ Holowaychuk",
+    "email": "tj@vision-media.ca",
+    "url": "http://tjholowaychuk.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/range-parser",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/range-parser/LICENSE"
+  },
+  "raw-body@3.0.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/stream-utils/raw-body",
+    "publisher": "Jonathan Ong",
+    "email": "me@jongleberry.com",
+    "url": "http://jongleberry.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/raw-body",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/raw-body/LICENSE"
+  },
+  "react-dom@19.2.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/facebook/react",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/react-dom",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/react-dom/LICENSE"
+  },
+  "react@19.2.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/facebook/react",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/react",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/react/LICENSE"
+  },
+  "router@2.2.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/pillarjs/router",
+    "publisher": "Douglas Christopher Wilson",
+    "email": "doug@somethingdoug.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/router",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/router/LICENSE"
+  },
+  "safer-buffer@2.1.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ChALkeR/safer-buffer",
+    "publisher": "Nikita Skovoroda",
+    "email": "chalkerx@gmail.com",
+    "url": "https://github.com/ChALkeR",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/safer-buffer",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/safer-buffer/LICENSE"
+  },
+  "scheduler@0.27.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/facebook/react",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/scheduler",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/scheduler/LICENSE"
+  },
+  "semver@7.7.3": {
+    "licenses": "ISC",
+    "repository": "https://github.com/npm/node-semver",
+    "publisher": "GitHub Inc.",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/semver",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/semver/LICENSE"
+  },
+  "send@1.2.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/pillarjs/send",
+    "publisher": "TJ Holowaychuk",
+    "email": "tj@vision-media.ca",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/send",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/send/LICENSE"
+  },
+  "serve-static@2.2.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/expressjs/serve-static",
+    "publisher": "Douglas Christopher Wilson",
+    "email": "doug@somethingdoug.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/serve-static",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/serve-static/LICENSE"
+  },
+  "setprototypeof@1.2.0": {
+    "licenses": "ISC",
+    "repository": "https://github.com/wesleytodd/setprototypeof",
+    "publisher": "Wes Todd",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/setprototypeof",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/setprototypeof/LICENSE"
+  },
+  "sharp@0.34.5": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/lovell/sharp",
+    "publisher": "Lovell Fuller",
+    "email": "npm@lovell.info",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/sharp",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/sharp/LICENSE"
+  },
+  "side-channel-list@1.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ljharb/side-channel-list",
+    "publisher": "Jordan Harband",
+    "email": "ljharb@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/side-channel-list",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/side-channel-list/LICENSE"
+  },
+  "side-channel-map@1.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ljharb/side-channel-map",
+    "publisher": "Jordan Harband",
+    "email": "ljharb@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/side-channel-map",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/side-channel-map/LICENSE"
+  },
+  "side-channel-weakmap@1.0.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ljharb/side-channel-weakmap",
+    "publisher": "Jordan Harband",
+    "email": "ljharb@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/side-channel-weakmap",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/side-channel-weakmap/LICENSE"
+  },
+  "side-channel@1.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ljharb/side-channel",
+    "publisher": "Jordan Harband",
+    "email": "ljharb@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/side-channel",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/side-channel/LICENSE"
+  },
+  "source-map-js@1.2.1": {
+    "licenses": "BSD-3-Clause",
+    "repository": "https://github.com/7rulnik/source-map-js",
+    "publisher": "Valentin 7rulnik Semirulnik",
+    "email": "v7rulnik@gmail.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/source-map-js",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/source-map-js/LICENSE"
+  },
+  "statuses@2.0.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/statuses",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/statuses",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/statuses/LICENSE"
+  },
+  "styled-jsx@5.1.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/vercel/styled-jsx",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/styled-jsx",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/styled-jsx/license.md"
+  },
+  "toidentifier@1.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/component/toidentifier",
+    "publisher": "Douglas Christopher Wilson",
+    "email": "doug@somethingdoug.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/toidentifier",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/toidentifier/LICENSE"
+  },
+  "tslib@2.8.1": {
+    "licenses": "0BSD",
+    "repository": "https://github.com/Microsoft/tslib",
+    "publisher": "Microsoft Corp.",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/tslib",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/tslib/LICENSE.txt"
+  },
+  "type-is@2.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/type-is",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/type-is",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/type-is/LICENSE"
+  },
+  "unpipe@1.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/stream-utils/unpipe",
+    "publisher": "Douglas Christopher Wilson",
+    "email": "doug@somethingdoug.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/unpipe",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/unpipe/LICENSE"
+  },
+  "vary@1.1.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/vary",
+    "publisher": "Douglas Christopher Wilson",
+    "email": "doug@somethingdoug.com",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/vary",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/vary/LICENSE"
+  },
+  "wrappy@1.0.2": {
+    "licenses": "ISC",
+    "repository": "https://github.com/npm/wrappy",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "url": "http://blog.izs.me/",
+    "path": "/home/lopos/projetos/NightMusic/node_modules/wrappy",
+    "licenseFile": "/home/lopos/projetos/NightMusic/node_modules/wrappy/LICENSE"
+  }
+}

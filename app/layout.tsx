@@ -1,10 +1,10 @@
-import './styles/globals.css';
-import './styles/style.css';
-import type { ReactNode } from 'react';
+import "./styles/globals.css";
+import "./styles/style.css";
+import type { ReactNode } from "react";
 
 export const metadata = {
-  title: 'NightMusic',
-  description: 'NightMusic - player',
+  title: "NightMusic",
+  description: "NightMusic - player",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

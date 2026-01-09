@@ -14,9 +14,9 @@ body {
     ui-sans-serif,
     system-ui,
     -apple-system,
-    'Segoe UI',
+    "Segoe UI",
     Roboto,
-    'Helvetica Neue',
+    "Helvetica Neue",
     Arial;
   background-color: var(--bg);
   color: var(--text);

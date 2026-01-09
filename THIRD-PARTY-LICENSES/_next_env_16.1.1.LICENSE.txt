@@ -1,0 +1,7 @@
+Package: @next/env@16.1.1
+License: MIT
+Source: /home/lopos/projetos/NightMusic/node_modules/@next/env/README.md
+
+# `@next/env`
+
+Next.js' util for loading dotenv files in with the proper priorities

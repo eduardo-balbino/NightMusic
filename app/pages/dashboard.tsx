@@ -1,14 +1,14 @@
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Dashboard() {
   const [ready, setReady] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
-    const token = typeof window !== 'undefined' ? localStorage.getItem('nm_token') : null;
+    const token = typeof window !== "undefined" ? localStorage.getItem("nm_token") : null;
     if (!token) {
-      router.replace('/login');
+      router.replace("/login");
     } else {
       setReady(true);
     }
