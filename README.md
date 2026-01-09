@@ -2,7 +2,7 @@
 
 <!-- Banner decorativo da galeria-drab -->
 
-![Banner NightMusic](https://galeria-drab.vercel.app/api/svg/banner/capa-4.svg?width=100%)
+![Banner NightMusic](https://galeria-drab.vercel.app/api/svg/banner/capa-4.svg)
 
 <div align="center">
 
