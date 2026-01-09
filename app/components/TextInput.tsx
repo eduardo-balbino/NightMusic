@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface TextInputProps {
   label: string;
@@ -11,11 +11,11 @@ interface TextInputProps {
 
 const TextInput: React.FC<TextInputProps> = ({
   label,
-  type = 'text',
+  type = "text",
   value,
   onChange,
   placeholder,
-  className = '',
+  className = "",
 }) => {
   return (
     <div className={`field ${className}`.trim()}>

@@ -1,8 +1,8 @@
 {
   "INCLUDE_EXCLUDE_RULES": {
     "globalExcludeGlob": [
-      "node_modules/**",
-      "**/node_modules/**",
+      "node_modules",
+      "**/node_modules",
       "dist/**",
       "coverage/**",
       "build/**",

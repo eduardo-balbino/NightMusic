@@ -1,20 +1,20 @@
-declare module '@components/*' {
+declare module "@components/*" {
   const content: any;
   export default content;
 }
-declare module '@services/*' {
+declare module "@services/*" {
   const content: any;
   export default content;
 }
-declare module '@hooks/*' {
+declare module "@hooks/*" {
   const content: any;
   export default content;
 }
-declare module '@styles/*' {
+declare module "@styles/*" {
   const content: any;
   export default content;
 }
-declare module '@app/*' {
+declare module "@app/*" {
   const content: any;
   export default content;
 }

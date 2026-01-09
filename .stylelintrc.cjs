@@ -3,16 +3,16 @@ module.exports = {
   // Mantemos verificações essenciais e permitimos diretivas do Tailwind
   extends: [],
   rules: {
-    'at-rule-no-unknown': [
+    "at-rule-no-unknown": [
       true,
       {
-        ignoreAtRules: ['tailwind', 'apply', 'variants', 'responsive', 'screen'],
+        ignoreAtRules: ["tailwind", "apply", "variants", "responsive", "screen"],
       },
     ],
-    'function-no-unknown': [
+    "function-no-unknown": [
       true,
       {
-        ignoreFunctions: ['theme'],
+        ignoreFunctions: ["theme"],
       },
     ],
   },

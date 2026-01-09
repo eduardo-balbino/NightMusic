@@ -1,10 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 /* Project base overrides */
 :root {
-  --bg: #f4f4f4;
-  --text: #333;
+  --color-bg: #0c1220;
+  --color-text: #e6eef8;
+  --color-card: #0f1724;
+  --color-primary: #111827;
+  --color-primary-variant: #374151;
+  --color-muted: #9ca3af;
+  --color-accent: #7c3aed;
+  --color-danger: #ef4444;
+  --color-success: #16a34a;
+  --card-radius: 0.5rem;
+  --card-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  --card-border: rgba(255, 255, 255, 0.04);
+  --control-bg: linear-gradient(90deg, var(--color-primary-variant) 0%, var(--color-primary) 100%);
+  --btn-bg: var(--color-muted);
+  --btn-dark-bg: linear-gradient(90deg, var(--color-primary-variant) 0%, var(--color-primary) 100%);
 }
 
 body {
@@ -14,21 +25,21 @@ body {
     ui-sans-serif,
     system-ui,
     -apple-system,
-    'Segoe UI',
+    "Segoe UI",
     Roboto,
-    'Helvetica Neue',
+    "Helvetica Neue",
     Arial;
-  background-color: var(--bg);
-  color: var(--text);
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 .container {
   max-width: 400px;
   margin: 50px auto;
   padding: 20px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background: var(--color-card);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
 }
 
 /* small helper to center content similar to Tailwind's flex utilities */
@@ -60,10 +71,10 @@ body {
   font-size: 0.875rem;
 }
 .text-gray-700 {
-  color: #374151;
+  color: var(--color-primary-variant);
 }
 .rounded {
-  border-radius: 0.5rem;
+  border-radius: var(--card-radius);
 }
 .shadow {
   box-shadow:
@@ -88,7 +99,7 @@ body {
   font-weight: 600;
 }
 .text-red-600 {
-  color: #dc2626;
+  color: var(--color-danger);
 }
 .disabled\:opacity-50[disabled] {
   opacity: 0.5;
@@ -100,12 +111,39 @@ body {
   margin-bottom: 12px;
 }
 
+/* Tabs styles using CSS variables */
+.tabs {
+  display: inline-flex;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+}
+
+.tabs .tab-btn {
+  background: transparent;
+  color: var(--color-muted);
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.tabs .tab-btn--active {
+  background: var(--color-card);
+  color: var(--color-text);
+  border-bottom: 0;
+}
+
+.tab-panel {
+  background: var(--color-card);
+  border: 1px solid var(--card-border);
+}
+
 .login-form {
-  background: var(--bg);
+  background: transparent;
   box-shadow: none;
-  border-radius: 0.5rem;
+  border-radius: var(--card-radius);
   padding: 1.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--card-border);
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -115,12 +153,12 @@ body {
   display: block;
   width: 100%;
   margin: 0;
-  border: 1px solid rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--card-border);
   border-radius: 0.375rem;
   padding: 0.75rem 0.75rem;
-  background: linear-gradient(90deg, #374151 0%, #111827 100%);
-  color: #ffffff;
-  caret-color: #ffffff;
+  background: var(--control-bg);
+  color: var(--color-text);
+  caret-color: var(--color-text);
   box-sizing: border-box;
   outline: none;
 }
@@ -131,19 +169,19 @@ body {
 
 .field-label {
   display: block;
-  color: #ffffff;
+  color: var(--color-text);
   margin-bottom: 0.35rem;
 }
 
 .btn {
   width: 100%;
   padding: 0.65rem 0.75rem;
-  color: #111827;
+  color: var(--color-text);
   border: none;
   border-radius: 0.375rem;
   cursor: pointer;
-  background: linear-gradient(90deg, #d1d5db 0%, #9ca3af 100%);
-  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+  background: var(--btn-bg);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
   transition:
     transform 120ms ease,
     box-shadow 120ms ease;
@@ -156,7 +194,7 @@ body {
 
 .login-form .btn:hover:not([disabled]) {
   transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(16, 24, 40, 0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .login-form .inputs-separator {
@@ -164,18 +202,18 @@ body {
 }
 
 .error {
-  color: #b91c1c;
+  color: var(--color-danger);
   font-size: 0.9rem;
   margin-bottom: 8px;
 }
 
 .btn-dark {
-  background: linear-gradient(90deg, #374151 0%, #111827 100%);
-  color: #ffffff;
-  box-shadow: 0 2px 6px rgba(17, 24, 39, 0.25);
+  background: var(--btn-dark-bg);
+  color: var(--color-text);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.28);
 }
 
 .btn-dark:hover:not([disabled]) {
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(17, 24, 39, 0.28);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.32);
 }

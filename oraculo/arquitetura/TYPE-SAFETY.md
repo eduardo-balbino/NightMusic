@@ -78,11 +78,11 @@ src/analistas/
 ```typescript
 // Genérico
 "Tipo 'any' em 'varName' desabilita verificação de tipos";
-'💡 Analise uso da variável e defina tipo específico ou use unknown com type guards';
+"💡 Analise uso da variável e defina tipo específico ou use unknown com type guards";
 
 // Catch block
 "'any' em catch block 'error' - TypeScript recomenda 'unknown'";
-'💡 Substitua por: catch (error: unknown) { ... }';
+"💡 Substitua por: catch (error: unknown) { ... }";
 ```
 
 ### 2. Type Assertions: `as any`
@@ -397,7 +397,7 @@ import {
   isUnknownInGenericContext,
   isInStringOrComment,
   extractVariableName,
-} from '@analistas/corrections/type-safety/context-analyzer.js';
+} from "@analistas/corrections/type-safety/context-analyzer.js";
 
 // Categorizar uso de unknown
 const resultado = categorizarUnknown(codigoFonte, caminhoArquivo, linhaContexto);
@@ -415,17 +415,17 @@ console.log(resultado);
 ### Criar Quick-Fix Customizado
 
 ```typescript
-import type { QuickFix } from '@tipos/analistas';
+import type { QuickFix } from "@tipos/analistas";
 
 const meuQuickFix: QuickFix = {
-  tipo: 'tipo-customizado',
-  descricao: 'Minha correção',
+  tipo: "tipo-customizado",
+  descricao: "Minha correção",
   aplicar: async (ocorrencia, codigo) => {
     // Lógica de correção
     return {
       sucesso: true,
       codigoCorrigido: novoCodeigo,
-      mensagem: 'Corrigido com sucesso',
+      mensagem: "Corrigido com sucesso",
     };
   },
 };
@@ -451,28 +451,28 @@ npm run coverage -- --grep "type-safety"
 ### Casos de Teste Importantes
 
 ```typescript
-describe('categorizarUnknown', () => {
-  it('detecta type guard como legítimo (100%)', () => {
-    const codigo = 'function isX(obj: unknown): obj is X';
-    const resultado = categorizarUnknown(codigo, 'file.ts', codigo);
+describe("categorizarUnknown", () => {
+  it("detecta type guard como legítimo (100%)", () => {
+    const codigo = "function isX(obj: unknown): obj is X";
+    const resultado = categorizarUnknown(codigo, "file.ts", codigo);
 
-    expect(resultado.categoria).toBe('legitimo');
+    expect(resultado.categoria).toBe("legitimo");
     expect(resultado.confianca).toBe(100);
   });
 
-  it('detecta catch block como legítimo (100%)', () => {
-    const codigo = 'catch (error: unknown) {';
-    const resultado = categorizarUnknown(codigo, 'file.ts', codigo);
+  it("detecta catch block como legítimo (100%)", () => {
+    const codigo = "catch (error: unknown) {";
+    const resultado = categorizarUnknown(codigo, "file.ts", codigo);
 
-    expect(resultado.categoria).toBe('legitimo');
+    expect(resultado.categoria).toBe("legitimo");
     expect(resultado.confianca).toBe(100);
   });
 
-  it('sugere melhorias para callbacks genéricos (70%)', () => {
-    const codigo = 'function onChange(opts: unknown) {';
-    const resultado = categorizarUnknown(codigo, 'file.ts', codigo);
+  it("sugere melhorias para callbacks genéricos (70%)", () => {
+    const codigo = "function onChange(opts: unknown) {";
+    const resultado = categorizarUnknown(codigo, "file.ts", codigo);
 
-    expect(resultado.categoria).toBe('melhoravel');
+    expect(resultado.categoria).toBe("melhoravel");
     expect(resultado.confianca).toBe(70);
     expect(resultado.sugestao).toBeDefined();
   });

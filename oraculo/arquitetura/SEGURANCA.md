@@ -58,7 +58,7 @@ Quando `SAFE_MODE=true`:
 Apenas extensões aprovadas são carregadas:
 
 ```typescript
-const EXTENSOES_PERMITIDAS = ['.js', '.mjs', '.cjs', '.ts'];
+const EXTENSOES_PERMITIDAS = [".js", ".mjs", ".cjs", ".ts"];
 ```
 
 ### Validação de Plugins
@@ -66,18 +66,18 @@ const EXTENSOES_PERMITIDAS = ['.js', '.mjs', '.cjs', '.ts'];
 ```typescript
 // 1. Verificação de extensão
 if (!EXTENSOES_PERMITIDAS.includes(ext)) {
-  throw new Error('Extensão não permitida');
+  throw new Error("Extensão não permitida");
 }
 
 // 2. Sanitização de path
 const safePath = path.normalize(pluginPath);
-if (safePath.includes('..')) {
-  throw new Error('Path traversal detectado');
+if (safePath.includes("..")) {
+  throw new Error("Path traversal detectado");
 }
 
 // 3. Validação de contrato
 if (!plugin.nome || !plugin.aplicar) {
-  throw new Error('Plugin inválido');
+  throw new Error("Plugin inválido");
 }
 ```
 
@@ -85,24 +85,24 @@ if (!plugin.nome || !plugin.aplicar) {
 
 ```typescript
 // plugins/meu-plugin.ts
-import type { Analista } from '@tipos/tipos';
+import type { Analista } from "@tipos/tipos";
 
 const plugin: Analista = {
-  nome: 'meu-plugin',
-  categoria: 'code-quality',
-  descricao: 'Meu plugin seguro',
+  nome: "meu-plugin",
+  categoria: "code-quality",
+  descricao: "Meu plugin seguro",
 
   test: (relPath: string) => {
     // Apenas leitura, sem side effects
-    return relPath.endsWith('.ts');
+    return relPath.endsWith(".ts");
   },
 
   aplicar: async (src: string, relPath: string) => {
     // Análise pura, sem modificações
     const problemas = analisarCodigo(src);
     return problemas.map((p) => ({
-      tipo: 'meu-problema',
-      nivel: 'aviso',
+      tipo: "meu-problema",
+      nivel: "aviso",
       mensagem: p.mensagem,
       relPath,
       linha: p.linha,
@@ -118,15 +118,15 @@ export default plugin;
 ### Acesso Seguro
 
 ```typescript
-import { lerEstado, salvarEstado } from '@shared/persistence/persistencia.js';
+import { lerEstado, salvarEstado } from "@shared/persistence/persistencia.js";
 
 // ❌ NUNCA faça isso
-import fs from 'fs';
-fs.readFileSync('/etc/passwd');
+import fs from "fs";
+fs.readFileSync("/etc/passwd");
 
 // ✅ Use funções seguras
-const dados = await lerEstado('meu-arquivo.json');
-await salvarEstado('meu-arquivo.json', dados);
+const dados = await lerEstado("meu-arquivo.json");
+await salvarEstado("meu-arquivo.json", dados);
 ```
 
 ### Sanitização de Paths
@@ -137,8 +137,8 @@ function sanitizePath(userPath: string): string {
   const normalized = path.normalize(userPath);
 
   // Bloqueia path traversal
-  if (normalized.includes('..')) {
-    throw new Error('Path traversal não permitido');
+  if (normalized.includes("..")) {
+    throw new Error("Path traversal não permitido");
   }
 
   // Resolve para absolute path
@@ -147,7 +147,7 @@ function sanitizePath(userPath: string): string {
   // Valida que está dentro do workspace
   const workspace = process.cwd();
   if (!absolute.startsWith(workspace)) {
-    throw new Error('Acesso fora do workspace negado');
+    throw new Error("Acesso fora do workspace negado");
   }
 
   return absolute;
@@ -157,12 +157,12 @@ function sanitizePath(userPath: string): string {
 ### Globs Seguros
 
 ```typescript
-import { validateGlob } from '@shared/validation/validacao.js';
+import { validateGlob } from "@shared/validation/validacao.js";
 
 // Valida padrões glob antes de usar
 function processGlob(pattern: string) {
   if (!validateGlob(pattern)) {
-    throw new Error('Padrão glob inválido');
+    throw new Error("Padrão glob inválido");
   }
 
   // Usa biblioteca segura
@@ -184,18 +184,18 @@ function processGlob(pattern: string) {
 // src/shared/validation/validacao.ts
 export function sanitizarFlags(flags: Record<string, unknown>): void {
   // Remove flags perigosos
-  delete flags['eval'];
-  delete flags['exec'];
-  delete flags['script'];
+  delete flags["eval"];
+  delete flags["exec"];
+  delete flags["script"];
 
   // Valida tipos
-  if (flags.timeout && typeof flags.timeout !== 'number') {
-    throw new Error('timeout deve ser número');
+  if (flags.timeout && typeof flags.timeout !== "number") {
+    throw new Error("timeout deve ser número");
   }
 
   // Valida ranges
   if (flags.timeout && (flags.timeout < 0 || flags.timeout > 300)) {
-    throw new Error('timeout fora do range permitido');
+    throw new Error("timeout fora do range permitido");
   }
 }
 ```
@@ -203,12 +203,12 @@ export function sanitizarFlags(flags: Record<string, unknown>): void {
 ### Validação de Argumentos
 
 ```typescript
-import { validarNumeroPositivo } from '@shared/validation/validacao.js';
+import { validarNumeroPositivo } from "@shared/validation/validacao.js";
 
 function processarTimeout(valor: unknown): number {
-  const timeout = validarNumeroPositivo(valor, 'timeout');
+  const timeout = validarNumeroPositivo(valor, "timeout");
   if (timeout === null) {
-    throw new Error('timeout inválido');
+    throw new Error("timeout inválido");
   }
   return timeout;
 }
@@ -219,7 +219,7 @@ function processarTimeout(valor: unknown): number {
 ### Escape de Unicode
 
 ```typescript
-import { stringifyJsonEscaped } from '@shared/helpers/json.js';
+import { stringifyJsonEscaped } from "@shared/helpers/json.js";
 
 // Escapa caracteres não-ASCII
 const jsonSeguro = stringifyJsonEscaped(dados, 2);
@@ -231,7 +231,7 @@ const jsonSeguro = stringifyJsonEscaped(dados, 2);
 ### Sanitização de Logs
 
 ```typescript
-import { stripLeadingSimbolos } from '@core/messages/log.ts';
+import { stripLeadingSimbolos } from "@core/messages/log.ts";
 
 // Remove símbolos potencialmente perigosos de logs
 function logSeguro(mensagem: string) {
@@ -253,7 +253,7 @@ async function executarAnalistaComTimeout(analista: Analista, arquivo: string) {
 
   return Promise.race([
     analista.aplicar(arquivo),
-    new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout')), timeout)),
+    new Promise((_, reject) => setTimeout(() => reject(new Error("Timeout")), timeout)),
   ]);
 }
 ```
@@ -275,7 +275,7 @@ export WORKER_POOL_TIMEOUT_MS=30000
 const HEARTBEAT_INTERVAL = 5000; // 5s
 
 setInterval(() => {
-  parentPort?.postMessage({ type: 'heartbeat' });
+  parentPort?.postMessage({ type: "heartbeat" });
 }, HEARTBEAT_INTERVAL);
 ```
 
@@ -303,7 +303,7 @@ function monitorarMemoria() {
   const usedMB = usage.heapUsed / 1024 / 1024;
 
   if (usedMB > MAX_MEMORY_MB) {
-    throw new Error('Limite de memória excedido');
+    throw new Error("Limite de memória excedido");
   }
 }
 ```
@@ -363,7 +363,7 @@ const file = await lerEstado(safePath);
 exec(`git diff ${userBranch}`);
 
 // ✅ Seguro
-execFile('git', ['diff', userBranch]);
+execFile("git", ["diff", userBranch]);
 ```
 
 ### 3. ReDoS (Regular Expression DoS)
@@ -379,7 +379,7 @@ const regex = /a+$/;
 function safeRegexTest(pattern: RegExp, text: string, timeoutMs = 1000) {
   return Promise.race([
     Promise.resolve(pattern.test(text)),
-    new Promise((_, reject) => setTimeout(() => reject(new Error('Regex timeout')), timeoutMs)),
+    new Promise((_, reject) => setTimeout(() => reject(new Error("Regex timeout")), timeoutMs)),
   ]);
 }
 ```
@@ -398,7 +398,7 @@ function merge(target: any, source: any) {
 function safeMerge(target: any, source: any) {
   for (const key in source) {
     if (Object.prototype.hasOwnProperty.call(source, key)) {
-      if (key === '__proto__' || key === 'constructor' || key === 'prototype') {
+      if (key === "__proto__" || key === "constructor" || key === "prototype") {
         continue; // Pula propriedades perigosas
       }
       target[key] = source[key];
@@ -431,7 +431,7 @@ export LOG_ESTRUTURADO=true
 
 ```typescript
 function logAcao(acao: string, detalhes: Record<string, unknown>) {
-  if (process.env.LOG_ESTRUTURADO === 'true') {
+  if (process.env.LOG_ESTRUTURADO === "true") {
     console.log(
       JSON.stringify({
         timestamp: new Date().toISOString(),
@@ -448,13 +448,13 @@ function logAcao(acao: string, detalhes: Record<string, unknown>) {
 ### Testes de Sanitização
 
 ```typescript
-describe('sanitização de paths', () => {
-  it('bloqueia path traversal', () => {
-    expect(() => sanitizePath('../../../etc/passwd')).toThrow('Path traversal não permitido');
+describe("sanitização de paths", () => {
+  it("bloqueia path traversal", () => {
+    expect(() => sanitizePath("../../../etc/passwd")).toThrow("Path traversal não permitido");
   });
 
-  it('bloqueia acesso fora do workspace', () => {
-    expect(() => sanitizePath('/etc/passwd')).toThrow('Acesso fora do workspace negado');
+  it("bloqueia acesso fora do workspace", () => {
+    expect(() => sanitizePath("/etc/passwd")).toThrow("Acesso fora do workspace negado");
   });
 });
 ```
@@ -462,13 +462,13 @@ describe('sanitização de paths', () => {
 ### Testes de Timeout
 
 ```typescript
-describe('timeout de analistas', () => {
-  it('cancela análise após timeout', async () => {
+describe("timeout de analistas", () => {
+  it("cancela análise após timeout", async () => {
     const analistaLento = {
       aplicar: () => new Promise((resolve) => setTimeout(resolve, 60000)),
     };
 
-    await expect(executarAnalistaComTimeout(analistaLento, 'file.ts')).rejects.toThrow('Timeout');
+    await expect(executarAnalistaComTimeout(analistaLento, "file.ts")).rejects.toThrow("Timeout");
   });
 });
 ```

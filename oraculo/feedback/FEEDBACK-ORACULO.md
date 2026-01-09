@@ -83,7 +83,7 @@ O Oráculo insiste que interfaces devem estar em `src/tipos/`, mas em projetos N
 ```javascript
 export default {
   conventions: {
-    typesDirectory: 'app/types', // ou 'src/tipos', 'types', etc.
+    typesDirectory: "app/types", // ou 'src/tipos', 'types', etc.
   },
 };
 ```
@@ -164,8 +164,8 @@ Esse é um arquivo **explicando quais licenças evitar**, não usando essas lice
 // next.config.mjs - linha 35
 headers: [
   {
-    key: 'X-Content-Type-Options', // ❌ "hardcoded-secrets" ???
-    value: 'nosniff',
+    key: "X-Content-Type-Options", // ❌ "hardcoded-secrets" ???
+    value: "nosniff",
   },
 ];
 ```
@@ -291,27 +291,27 @@ Arquivo de configuração `oraculo.config.js`:
 
 ```javascript
 export default {
-  allowMutateFs: process.env.CI !== 'true', // Permite em dev, bloqueia em CI
+  allowMutateFs: process.env.CI !== "true", // Permite em dev, bloqueia em CI
 
   ignore: [
-    'docs/AUDITORIA-LICENCAS.md', // Ignora checagem de licenças
-    '**/*.test.ts', // Ignora alguns checks em testes
+    "docs/AUDITORIA-LICENCAS.md", // Ignora checagem de licenças
+    "**/*.test.ts", // Ignora alguns checks em testes
   ],
 
   rules: {
-    'interface-inline-exportada': 'off', // Desliga regra específica
-    'markdown-licenca-incompativel': 'warn', // Downgrade erro para aviso
-    'css/duplicado-media-query': 'off',
+    "interface-inline-exportada": "off", // Desliga regra específica
+    "markdown-licenca-incompativel": "warn", // Downgrade erro para aviso
+    "css/duplicado-media-query": "off",
   },
 
   autofix: {
-    mode: 'balanced',
-    exclude: ['app/components/**'], // Nunca auto-fix em componentes
+    mode: "balanced",
+    exclude: ["app/components/**"], // Nunca auto-fix em componentes
   },
 
   output: {
-    format: 'json',
-    file: 'oraculo-report.json',
+    format: "json",
+    file: "oraculo-report.json",
   },
 };
 ```
@@ -418,9 +418,9 @@ oraculo fix --only="missing-jsdoc,formatting"
 ```javascript
 // oraculo-plugin-custom.js
 export default {
-  name: 'custom-rules',
+  name: "custom-rules",
   rules: {
-    'no-console-log': (file, ast) => {
+    "no-console-log": (file, ast) => {
       // Custom rule logic
     },
   },

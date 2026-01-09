@@ -1,3 +1,36 @@
+<!-- Badges: Galeria DRAB e Status GitHub -->
+
+<!-- Banner decorativo da galeria-drab -->
+
+![Banner NightMusic](https://galeria-drab.vercel.app/api/svg/banner/capa-4.svg?width=100%)
+
+<div align="center">
+
+<!-- Badges de status e tecnologias -->
+
+[![Build Status](https://github.com/eduardo-balbino/NightMusic/actions/workflows/build.yml/badge.svg)](https://github.com/eduardo-balbino/NightMusic/actions/workflows/build.yml)
+[![Lint Status](https://github.com/eduardo-balbino/NightMusic/actions/workflows/lint.yml/badge.svg)](https://github.com/eduardo-balbino/NightMusic/actions/workflows/lint.yml)
+
+</div>
+<div align="center">
+	</a>
+	<a href="https://nextjs.org">
+		<img src="https://galeria-drab.vercel.app/api/svg/badges/skills/badge-nextjs.svg?width=150" alt="Next.js" />
+	</a>
+	<a href="https://tailwindcss.com">
+		<img src="https://galeria-drab.vercel.app/api/svg/badges/skills/badge-tailwind.svg?width=150" alt="Tailwind CSS" />
+	</a>
+	<a href="https://expressjs.com">
+		<img src="https://galeria-drab.vercel.app/api/svg/badges/skills/badge-express.svg?width=150" alt="Express" />
+	</a>
+	<a href="https://www.typescriptlang.org">
+		<img src="https://galeria-drab.vercel.app/api/svg/badges/skills/badge-typescript.svg?width=150" alt="TypeScript" />
+	</a>
+	<a href="https://nodejs.org">
+		<img src="https://galeria-drab.vercel.app/api/svg/badges/skills/badge-nodejs.svg?width=150"alt="Nodejs"/>
+	</a>
+</div>
+
 **Proveniência e Autoria:** Este repositório foi criado e é mantido por Eduardo B. (uso pessoal/educacional).
 
 ## Roadmap
@@ -129,7 +162,7 @@ Persistent storage will be introduced through a backend in future versions.
 cd backend
 npm install
 npm run dev
-```
+````
 
 Environment variables are defined in a `.env` file located at the backend root.
 
@@ -191,7 +224,8 @@ MIT License
 Eduardo B.
 
 This project is part of a personal learning journey into backend and fullstack development.
-````
+
+```
 
 <!-- Status badges -->
 
@@ -203,3 +237,4 @@ This project is part of a personal learning journey into backend and fullstack d
 
 [![Deployed on Vercel](https://img.shields.io/badge/deployed%20on-Vercel-000000?style=flat&logo=vercel)](https://vercel.com)
 [![Built with Next.js](https://img.shields.io/badge/Framework-Next.js-black?logo=next.js)](https://nextjs.org)
+```
