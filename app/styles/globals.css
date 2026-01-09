@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Project base overrides */
+:root {
+  --bg: #f4f4f4;
+  --text: #333;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* small helper to center content similar to Tailwind's flex utilities */
+.center-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* small helpers to replace common Tailwind utilities used earlier */
+.min-h-screen {
+  min-height: 100vh;
+}
+.page-padding {
+  padding: 1rem;
+}
+.w-full {
+  width: 100%;
+}
+.form-wrapper {
+  width: 100%;
+  max-width: 420px;
+}
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+}
+.text-gray-700 {
+  color: #374151;
+}
+.rounded {
+  border-radius: 0.5rem;
+}
+.shadow {
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.1),
+    0 1px 2px rgba(0, 0, 0, 0.06);
+}
+.p-6 {
+  padding: 1.5rem;
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.text-red-600 {
+  color: #dc2626;
+}
+.disabled\:opacity-50[disabled] {
+  opacity: 0.5;
+}
+
+.logo {
+  max-width: 56px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.login-form {
+  background: var(--bg);
+  box-shadow: none;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.input-field {
+  display: block;
+  width: 100%;
+  margin: 0;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 0.375rem;
+  padding: 0.75rem 0.75rem;
+  background: linear-gradient(90deg, #374151 0%, #111827 100%);
+  color: #ffffff;
+  caret-color: #ffffff;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.field-label {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 0.35rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  color: #111827;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  background: linear-gradient(90deg, #d1d5db 0%, #9ca3af 100%);
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease;
+}
+
+.btn[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.login-form .btn:hover:not([disabled]) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(16, 24, 40, 0.08);
+}
+
+.login-form .inputs-separator {
+  margin-top: 0.5rem;
+}
+
+.error {
+  color: #b91c1c;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.btn-dark {
+  background: linear-gradient(90deg, #374151 0%, #111827 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(17, 24, 39, 0.25);
+}
+
+.btn-dark:hover:not([disabled]) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(17, 24, 39, 0.28);
+}

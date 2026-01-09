@@ -4,15 +4,15 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: '/musics/:path*',
-        destination: 'http://localhost:3000/musics/:path*',
+        source: "/musics/:path*",
+        destination: "http://localhost:3000/musics/:path*",
       },
       {
-        source: '/api/:path*',
-        destination: 'http://localhost:3000/api/:path*',
+        source: "/api/:path*",
+        destination: "http://localhost:3000/api/:path*",
       },
     ];
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;

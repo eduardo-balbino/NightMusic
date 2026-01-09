@@ -6,3 +6,9 @@ node_modules
 .next
 dist
 build
+next-env.d.ts
+.DS_Store
+.vscode
+.idea
+*.log
+*.lock
