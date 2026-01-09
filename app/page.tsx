@@ -56,7 +56,7 @@ export default function Page(): JSX.Element | null {
     try {
       audioRef.current.play();
       setIsPlaying(true);
-    } catch (_e) {
+    } catch {
       setIsPlaying(false);
     }
   };

@@ -9,7 +9,7 @@ const useAuth = () => {
       const userData = await loginService(credentials);
       setUser(userData);
       return userData;
-    } catch (_error) {
+    } catch {
       throw new Error("Login failed");
     }
   };

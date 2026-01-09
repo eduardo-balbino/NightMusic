@@ -13,7 +13,7 @@ export async function login(creds: Creds) {
 export async function logout() {
   try {
     await fetch("/api/auth/logout", { method: "POST" });
-  } catch (_e) {
+  } catch {
     // ignore
   }
 }
