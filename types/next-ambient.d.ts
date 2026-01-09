@@ -13,3 +13,7 @@ declare module 'next/link' {
   const Link: any;
   export default Link;
 }
+
+declare module 'next/router' {
+  export function useRouter(...a: any[]): any;
+}
