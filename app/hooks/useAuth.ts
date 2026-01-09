@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { login as loginService, logout as logoutService } from "@services/auth.js";
+import { useState } from 'react';
+import { login as loginService, logout as logoutService } from '@services/auth.js';
 
 const useAuth = () => {
   const [user, setUser] = useState(null);
@@ -10,7 +10,7 @@ const useAuth = () => {
       setUser(userData);
       return userData;
     } catch {
-      throw new Error("Login failed");
+      throw new Error('Login failed');
     }
   };
 

@@ -7,7 +7,7 @@
     "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start -p 3001",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix",
+    "lint": "eslint \"app/**/*.{js,jsx,ts,tsx}\" --ext .js,.jsx,.ts,.tsx --ignore-pattern node_modules --ignore-pattern dist --ignore-pattern build --fix",
     "format": "prettier --write .",
     "prettier:check": "prettier --check .",
     "stylelint": "stylelint \"app/styles/**/*.{css,scss}\"",

@@ -1,27 +1,29 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import { useRouter } from "next/navigation.js";
-import TextInput from "./TextInput.js";
-import { login } from "@services/auth.js";
+import React, { useState } from 'react';
+import { useRouter } from 'next/navigation.js';
+import TextInput from './TextInput.js';
+import { login } from '@services/auth.js';
 
 export default function LoginForm() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setError("");
+    setError('');
     setLoading(true);
     try {
       const data = await login({ username, password });
-      if (typeof window !== "undefined") {localStorage.setItem("nm_token", data.token);}
-      router.push("/dashboard");
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('nm_token', data.token);
+      }
+      router.push('/dashboard');
     } catch {
-      setError("Credenciais inválidas");
+      setError('Credenciais inválidas');
     } finally {
       setLoading(false);
     }
@@ -49,7 +51,7 @@ export default function LoginForm() {
         className="btn font-semibold rounded btn-dark px-4 py-2"
         disabled={loading}
       >
-        {loading ? "Entrando..." : "Entrar"}
+        {loading ? 'Entrando...' : 'Entrar'}
       </button>
     </form>
   );

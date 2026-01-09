@@ -18,10 +18,10 @@ app.get('/health', (req, res) => {
 });
 
 app.get('/api/error-test', (req, res) => {
-  throw new Error('Test error')
-})
+  throw new Error('Test error');
+});
 
-app.use(errorHandler)
+app.use(errorHandler);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
