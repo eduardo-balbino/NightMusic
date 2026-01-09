@@ -1,3 +1,5 @@
+> Proveniência e Autoria: Este arquivo integra o projeto NightMusic. Consulte LICENSE e README para mais informações.
+
 # Changelog
 
 Todos os notable changes to this project will be documented in this file.

@@ -42,7 +42,6 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
-    "oraculo": "file:oraculo-0.3.0.tgz",
     "postcss": "^8.0.0",
     "prettier": "^3.6.2",
     "stylelint": "^16.26.1",

@@ -1,8 +1,8 @@
 import express from "express";
 import "dotenv/config";
-import musicRouter from "./routes/musics.routes";
-import { logger } from "./middlewares/logger.middlewares";
-import { errorHandler } from "./middlewares/error.middlewares";
+import musicRouter from "./routes/musics.routes.js";
+import { logger } from "./middlewares/logger.middlewares.js";
+import { errorHandler } from "./middlewares/error.middlewares.js";
 
 const app = express();
 const PORT = Number(process.env.PORT) || 3000;

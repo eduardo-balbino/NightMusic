@@ -1,12 +1,25 @@
 import { useState } from "react";
 import { login as loginService, logout as logoutService } from "@services/auth.js";
 
-const useAuth = () => {
-  const [user, setUser] = useState(null);
+interface Credentials {
+  username: string;
+  password: string;
+  // adicione outros campos conforme necessário
+}
 
-  const login = async (credentials) => {
+interface User {
+  id: string;
+  name: string;
+  email: string;
+  // adicione outros campos conforme necessário
+}
+
+const useAuth = () => {
+  const [user, setUser] = useState<User | null>(null);
+
+  const login = async (credentials: Credentials): Promise<User> => {
     try {
-      const userData = await loginService(credentials);
+      const userData: User = await loginService(credentials);
       setUser(userData);
       return userData;
     } catch {

@@ -1,3 +1,5 @@
+> Proveniência e Autoria: Este arquivo integra o projeto NightMusic. Consulte LICENSE e README para mais informações.
+
 # Código de Conduta
 
 Este projeto segue um padrão de respeito, inclusão e profissionalismo. Espera-se que colaboradores e participantes:
