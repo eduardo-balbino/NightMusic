@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation.js';
 import TextInput from './TextInput.js';
-import { login } from '../services/auth.js';
+import { login } from '@services/auth.js';
 
 export default function LoginForm() {
   const [username, setUsername] = useState('');
