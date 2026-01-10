@@ -39,8 +39,8 @@ export default function ForgotPasswordForm() {
   }
 
   return (
-    <form className="forgot-form shadow rounded p-6 flex flex-col gap-6" onSubmit={handleSubmit}>
-      <h1 className="text-xl font-semibold text-gray-700 text-center">Recuperar senha</h1>
+    <form className="forgot-form shadow rounded p-6 flex flex-col" onSubmit={handleSubmit}>
+      <h1 className="text-xl font-semibold text-center">Recuperar senha</h1>
 
       <label className="text-sm">E-mail</label>
       <input
@@ -53,7 +53,7 @@ export default function ForgotPasswordForm() {
 
       <button
         type="submit"
-        className="btn font-semibold rounded btn-dark px-4 py-2"
+        className="btn font-semibold rounded px-4 py-2"
         disabled={loading}
       >
         {loading ? "Enviando..." : "Enviar link de recuperação"}

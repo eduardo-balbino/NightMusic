@@ -17,7 +17,7 @@ export default function AuthTabs() {
   }
   return (
     <div className="auth-wrapper">
-      <div className="tab-panel p-4 rounded-b-md">{content}</div>
+      <div className="p-4 rounded-b-md">{content}</div>
     </div>
   );
 }
