@@ -1,20 +1,19 @@
 import { useState } from "react";
 import { login as loginService, logout as logoutService } from "@services/auth.js";
 
-interface Credentials {
+// Local minimal types to avoid unresolved module '@types/type' — adjust fields as needed
+type Credentials = {
   username: string;
   password: string;
-  // adicione outros campos conforme necessário
-}
+};
 
-interface User {
+type User = {
   id: string;
-  name: string;
-  email: string;
-  // adicione outros campos conforme necessário
-}
+  name?: string;
+  email?: string;
+};
 
-const useAuth = () => {
+export const useAuth = () => {
   const [user, setUser] = useState<User | null>(null);
 
   const login = async (credentials: Credentials): Promise<User> => {
@@ -35,4 +34,3 @@ const useAuth = () => {
   return { user, login, logout };
 };
 
-export default useAuth;
