@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation.js";
 import TextInput from "./TextInput.js";
 import { login } from "@services/auth.js";
+import Link from "next/link";
 
 export default function LoginForm() {
   const [username, setUsername] = useState("");
@@ -30,40 +31,44 @@ export default function LoginForm() {
   }
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="login-form shadow rounded p-6 flex flex-col gap-6 max-w-md mx-auto"
-    >
-      <h1 className="text-2xl font-bold text-center mb-4 text-primary-variant">Acesse sua conta</h1>
-      <p className="text-center text-gray-500 mb-4">
-        Bem-vindo de volta! Faça login para continuar.
-      </p>
-
-      <div className="flex flex-col gap-6">
-        <TextInput
-          label="Usuário"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          className=""
-        />
-        <TextInput
-          label="Senha"
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className=""
-        />
-      </div>
-
-      {error && <p className="error text-red-600 text-sm text-center mt-2">{error}</p>}
-
-      <button
-        type="submit"
-        className="btn font-semibold rounded btn-dark px-4 py-2 mt-2 w-full"
-        disabled={loading}
+    <>
+      <form
+        onSubmit={handleSubmit}
+        className="login-form shadow rounded p-6 flex flex-col gap-6 max-w-md mx-auto"
       >
-        {loading ? "Entrando..." : "Entrar"}
-      </button>
-    </form>
+        <h1 className="text-2xl font-bold text-center mb-4 text-primary-variant">Acesse sua conta</h1>
+        <p className="text-center text-gray-400 mb-4">
+          Bem-vindo de volta! Faça login para continuar.
+        </p>
+
+        <div className="flex flex-col gap-2">
+          <TextInput
+            label="Usuário"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            className=""
+          />
+          <TextInput
+            label="Senha"
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className=""
+          />
+          <small><Link href='/forgot' className='link'>Esqueceu a senha?</Link></small>
+        </div>
+
+        {error && <p className="error text-red-600 text-sm text-center mt-2">{error}</p>}
+
+        <button
+          type="submit"
+          className="btn font-semibold rounded px-4 py-2 mt-2 w-full"
+          disabled={loading}
+        >
+          {loading ? "Entrando..." : "Entrar"}
+        </button>
+      </form>
+      <small className="text-center small">Não possui uma conta? <Link href='/register' className='link'>Registre-se</Link></small>
+    </>
   );
 }
