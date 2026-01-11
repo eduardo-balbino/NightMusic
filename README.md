@@ -83,7 +83,6 @@ Eduardo B.
 
 This project is part of a personal learning journey into backend and fullstack development.
 
-````
 
 # NightMusic
 
@@ -145,7 +144,7 @@ Persistent storage will be introduced through a backend in future versions.
 
 - HTML5
 - CSS3
-- Vanilla JavaScript
+- Typescript
 
 ### Backend (in progress)
 
@@ -225,7 +224,6 @@ Eduardo B.
 
 This project is part of a personal learning journey into backend and fullstack development.
 
-```
 
 <!-- Status badges -->
 
