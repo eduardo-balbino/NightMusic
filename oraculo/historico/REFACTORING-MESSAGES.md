@@ -91,7 +91,11 @@ Exemplo antes/depois:
 
 ```typescript
 // ANTES
-warn('Link com target="_blank" sem rel="noreferrer"/"noopener".', relPath, line);
+warn(
+  'Link com target="_blank" sem rel="noreferrer"/"noopener".',
+  relPath,
+  line,
+);
 
 // DEPOIS
 warn(ReactMessages.linkTargetBlank, relPath, line);

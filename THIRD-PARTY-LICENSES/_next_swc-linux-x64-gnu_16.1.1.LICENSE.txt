@@ -1,7 +1,0 @@
-Package: @next/swc-linux-x64-gnu@16.1.1
-License: MIT
-Source: /home/lopos/projetos/NightMusic/node_modules/@next/swc-linux-x64-gnu/README.md
-
-# `@next/swc-linux-x64-gnu`
-
-This is the **x86_64-unknown-linux-gnu** binary for `@next/swc`

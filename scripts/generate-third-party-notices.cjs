@@ -28,10 +28,13 @@ if (fs.existsSync(jsonPath)) {
   keys.forEach((pkg) => {
     const safeName = pkg.replace(/[^a-z0-9\.\-]/gi, "_");
     const file = path.join(dir, `${safeName}.LICENSE.txt`);
-    outStream += "----------------------------------------------------------------" + "\n";
+    outStream +=
+      "----------------------------------------------------------------" + "\n";
     outStream += `Package: ${pkg}\n`;
     outStream += `License: ${licenses[pkg] && licenses[pkg].licenses ? licenses[pkg].licenses : "UNKNOWN"}\n`;
-    outStream += "----------------------------------------------------------------" + "\n\n";
+    outStream +=
+      "----------------------------------------------------------------" +
+      "\n\n";
     if (fs.existsSync(file)) {
       outStream += fs.readFileSync(file, "utf8") + "\n\n";
     } else {
@@ -42,9 +45,12 @@ if (fs.existsSync(jsonPath)) {
   // simple concat
   keys.forEach((fname) => {
     const file = path.join(dir, fname);
-    outStream += "----------------------------------------------------------------" + "\n";
+    outStream +=
+      "----------------------------------------------------------------" + "\n";
     outStream += `File: ${fname}\n`;
-    outStream += "----------------------------------------------------------------" + "\n\n";
+    outStream +=
+      "----------------------------------------------------------------" +
+      "\n\n";
     outStream += fs.readFileSync(file, "utf8") + "\n\n";
   });
 }

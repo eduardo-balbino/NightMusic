@@ -336,7 +336,7 @@ Para melhorar o sistema de erros:
          relPath,
          stack: (error as Error).stack, // ✨ Importante
          origem: "meu-analista",
-       })
+       }),
      );
    }
    ```

@@ -8,7 +8,8 @@ export default function Dashboard() {
   const router = useRouter();
 
   useEffect(() => {
-    const token = typeof window !== "undefined" ? localStorage.getItem("nm_token") : null;
+    const token =
+      typeof window !== "undefined" ? localStorage.getItem("nm_token") : null;
     if (!token) {
       router.replace("/login");
     } else {

@@ -249,11 +249,14 @@ function logSeguro(mensagem: string) {
 const TIMEOUT_PADRAO = 30000; // 30s
 
 async function executarAnalistaComTimeout(analista: Analista, arquivo: string) {
-  const timeout = process.env.ORACULO_ANALISE_TIMEOUT_POR_ANALISTA_MS || TIMEOUT_PADRAO;
+  const timeout =
+    process.env.ORACULO_ANALISE_TIMEOUT_POR_ANALISTA_MS || TIMEOUT_PADRAO;
 
   return Promise.race([
     analista.aplicar(arquivo),
-    new Promise((_, reject) => setTimeout(() => reject(new Error("Timeout")), timeout)),
+    new Promise((_, reject) =>
+      setTimeout(() => reject(new Error("Timeout")), timeout),
+    ),
   ]);
 }
 ```
@@ -379,7 +382,9 @@ const regex = /a+$/;
 function safeRegexTest(pattern: RegExp, text: string, timeoutMs = 1000) {
   return Promise.race([
     Promise.resolve(pattern.test(text)),
-    new Promise((_, reject) => setTimeout(() => reject(new Error("Regex timeout")), timeoutMs)),
+    new Promise((_, reject) =>
+      setTimeout(() => reject(new Error("Regex timeout")), timeoutMs),
+    ),
   ]);
 }
 ```
@@ -437,7 +442,7 @@ function logAcao(acao: string, detalhes: Record<string, unknown>) {
         timestamp: new Date().toISOString(),
         acao,
         ...detalhes,
-      })
+      }),
     );
   }
 }
@@ -450,11 +455,15 @@ function logAcao(acao: string, detalhes: Record<string, unknown>) {
 ```typescript
 describe("sanitização de paths", () => {
   it("bloqueia path traversal", () => {
-    expect(() => sanitizePath("../../../etc/passwd")).toThrow("Path traversal não permitido");
+    expect(() => sanitizePath("../../../etc/passwd")).toThrow(
+      "Path traversal não permitido",
+    );
   });
 
   it("bloqueia acesso fora do workspace", () => {
-    expect(() => sanitizePath("/etc/passwd")).toThrow("Acesso fora do workspace negado");
+    expect(() => sanitizePath("/etc/passwd")).toThrow(
+      "Acesso fora do workspace negado",
+    );
   });
 });
 ```
@@ -468,7 +477,9 @@ describe("timeout de analistas", () => {
       aplicar: () => new Promise((resolve) => setTimeout(resolve, 60000)),
     };
 
-    await expect(executarAnalistaComTimeout(analistaLento, "file.ts")).rejects.toThrow("Timeout");
+    await expect(
+      executarAnalistaComTimeout(analistaLento, "file.ts"),
+    ).rejects.toThrow("Timeout");
   });
 });
 ```

@@ -50,7 +50,10 @@ if (opts.json) {
 ### Mensagens de sucesso/erro específicas
 
 ```ts
-import { MENSAGENS_ERRO, MENSAGENS_SUCESSO } from "@core/messages/fix-types-messages.js";
+import {
+  MENSAGENS_ERRO,
+  MENSAGENS_SUCESSO,
+} from "@core/messages/fix-types-messages.js";
 
 log.sucesso(MENSAGENS_SUCESSO.analiseConcluida);
 log.erro(MENSAGENS_ERRO.modulosNaoEncontrados(modulos));

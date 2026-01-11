@@ -102,13 +102,17 @@ export default function Page(): JSX.Element | null {
             <>
               <img src={logo.src} alt="logo" className="logo" />
               <div className="empty-message">
-                Nenhuma música carregada. Use o botão de arquivo para adicionar músicas.
+                Nenhuma música carregada. Use o botão de arquivo para adicionar
+                músicas.
               </div>
             </>
           ) : (
             <ol className="playlist">
               {playlist.map((m, idx) => (
-                <li key={m.id} className={`playlist-item ${idx === currentIndex ? "current" : ""}`}>
+                <li
+                  key={m.id}
+                  className={`playlist-item ${idx === currentIndex ? "current" : ""}`}
+                >
                   {m.name}
                 </li>
               ))}

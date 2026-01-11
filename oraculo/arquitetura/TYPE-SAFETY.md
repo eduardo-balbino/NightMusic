@@ -400,7 +400,11 @@ import {
 } from "@analistas/corrections/type-safety/context-analyzer.js";
 
 // Categorizar uso de unknown
-const resultado = categorizarUnknown(codigoFonte, caminhoArquivo, linhaContexto);
+const resultado = categorizarUnknown(
+  codigoFonte,
+  caminhoArquivo,
+  linhaContexto,
+);
 
 console.log(resultado);
 // {

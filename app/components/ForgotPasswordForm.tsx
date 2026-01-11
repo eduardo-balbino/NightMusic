@@ -30,7 +30,9 @@ export default function ForgotPasswordForm() {
     try {
       // Chamar API de recuperação de senha se existir.
       // Ex: await fetch('/api/auth/forgot', { method: 'POST', body: JSON.stringify({ email }) })
-      setMessage("Se o e-mail existir, você receberá instruções para resetar a senha.");
+      setMessage(
+        "Se o e-mail existir, você receberá instruções para resetar a senha.",
+      );
     } catch {
       setError("Erro ao processar. Tente novamente.");
     } finally {
@@ -39,8 +41,16 @@ export default function ForgotPasswordForm() {
   }
 
   return (
+<<<<<<< Updated upstream
     <form className="forgot-form shadow rounded p-6 flex flex-col gap-6" onSubmit={handleSubmit}>
       <h1 className="text-xl font-semibold text-gray-700 text-center">Recuperar senha</h1>
+=======
+    <form
+      className="forgot-form shadow rounded p-6 flex flex-col"
+      onSubmit={handleSubmit}
+    >
+      <h1 className="text-xl font-semibold text-center">Recuperar senha</h1>
+>>>>>>> Stashed changes
 
       <label className="text-sm">E-mail</label>
       <input

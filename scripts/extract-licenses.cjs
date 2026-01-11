@@ -6,7 +6,9 @@ if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
 const jsonPath = path.join(outDir, "licenses.json");
 if (!fs.existsSync(jsonPath)) {
-  console.error("licenses.json not found in THIRD-PARTY-LICENSES/. Run license-checker first.");
+  console.error(
+    "licenses.json not found in THIRD-PARTY-LICENSES/. Run license-checker first.",
+  );
   process.exit(1);
 }
 

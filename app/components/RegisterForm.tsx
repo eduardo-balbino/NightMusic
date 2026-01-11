@@ -106,8 +106,77 @@ export default function RegisterForm() {
         className="btn font-semibold rounded btn-dark px-4 py-2"
         disabled={loading}
       >
+<<<<<<< Updated upstream
         {loading ? "Registrando..." : "Criar conta"}
       </button>
     </form>
+=======
+        <h1 className="text-xl font-bold text-center">Registrar</h1>
+
+        <label className="text-sm">Nome</label>
+        <input
+          className="input-field"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        {errors.name && (
+          <span className="error text-red-600 text-sm">{errors.name}</span>
+        )}
+
+        <label className="text-sm">E-mail</label>
+        <input
+          type="email"
+          className="input-field"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        {errors.email && (
+          <span className="error text-red-600 text-sm">{errors.email}</span>
+        )}
+
+        <label className="text-sm">Senha</label>
+        <input
+          type="password"
+          className="input-field"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        {errors.password && (
+          <span className="error text-red-600 text-sm">{errors.password}</span>
+        )}
+
+        <label className="text-sm">Confirmar senha</label>
+        <input
+          type="password"
+          className="input-field"
+          value={confirmPassword}
+          onChange={(e) => setConfirmPassword(e.target.value)}
+        />
+        {errors.confirmPassword && (
+          <span className="error text-red-600 text-sm">
+            {errors.confirmPassword}
+          </span>
+        )}
+
+        {errors.form && (
+          <div className="error text-red-600 text-sm">{errors.form}</div>
+        )}
+
+        <button
+          type="submit"
+          className="btn font-semibold rounded px-4 py-2"
+          disabled={loading}
+        >
+          {loading ? "Registrando..." : "Criar conta"}
+        </button>
+      </form>
+      <small className="text-center small">
+        Já possui uma conta?{" "}
+        <Link href="/login" className="link">
+          Faça o login
+        </Link>
+      </small>
+    </>
+>>>>>>> Stashed changes
   );
 }
