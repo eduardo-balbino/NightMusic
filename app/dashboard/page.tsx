@@ -8,12 +8,14 @@ export default function Dashboard() {
   const router = useRouter();
 
   useEffect(() => {
-    const token = typeof window !== "undefined" ? localStorage.getItem("nm_token") : null;
-    if (!token) {
-      router.replace("/login");
-    } else {
-      setReady(true);
-    }
+    // Temporariamente desabilitado para visualizar o dashboard
+    // const token = typeof window !== "undefined" ? localStorage. getItem("nm_token") : null;
+    // if (! token) {
+    //   router.replace("/login");
+    // } else {
+    //   setReady(true);
+    // }
+    setReady(true);
   }, [router]);
 
   if (!ready) {
