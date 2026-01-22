@@ -2,8 +2,6 @@
 
 <!-- Banner decorativo da galeria-drab -->
 
-![Banner NightMusic](https://galeria-drab.vercel.app/api/svg/banner/capa-4.svg)
-
 <div align="center">
 
 <!-- Badges de status e tecnologias -->
