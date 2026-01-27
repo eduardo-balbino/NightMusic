@@ -2,8 +2,6 @@
 
 <!-- Banner decorativo da galeria-drab -->
 
-![Banner NightMusic](https://galeria-drab.vercel.app/api/svg/banner/capa-4.svg)
-
 <div align="center">
 
 <!-- Badges de status e tecnologias -->
@@ -235,4 +233,3 @@ This project is part of a personal learning journey into backend and fullstack d
 
 [![Deployed on Vercel](https://img.shields.io/badge/deployed%20on-Vercel-000000?style=flat&logo=vercel)](https://vercel.com)
 [![Built with Next.js](https://img.shields.io/badge/Framework-Next.js-black?logo=next.js)](https://nextjs.org)
-```
