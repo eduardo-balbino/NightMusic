@@ -1,3 +1,15 @@
 tests
 architecture-folder.txt
 .env
+node_modules
+.oraculo
+.next
+dist
+build
+next-env.d.ts
+.DS_Store
+.vscode
+.idea
+*.log
+*.lock
+.env.db
