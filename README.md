@@ -81,7 +81,6 @@ Eduardo B.
 
 This project is part of a personal learning journey into backend and fullstack development.
 
-
 # NightMusic
 
 NightMusic is a personal music player project focused on **learning backend fundamentals** while building a real, functional application.
@@ -103,9 +102,9 @@ This project prioritizes **learning and clarity over shortcuts**.
 
 ## Current Version
 
-**v0.1.0 Frontend Preview (Local Playlist)**
+**v0.2.x Backend Foundation + Frontend Integration (Work in Progress)**
 
-This release represents an early frontend-only preview of the music player.
+This release already includes a backend foundation and frontend authentication flow for local development.
 
 ### Features
 
@@ -113,14 +112,17 @@ This release represents an early frontend-only preview of the music player.
 - Interactive playlist
 - Audio playback in the browser
 - Responsive user interface
+- Express backend with `/health` and `/musics` routes
+- Local auth endpoints for login/logout testing (`/api/auth/login`, `/api/auth/logout`)
 
 ### Known Limitations
 
 - Music files do not persist after page reload
 - Songs must be re-added on every session
-- No backend or server-side storage is implemented yet
+- Authentication is currently mock-based (`user` / `password`) and not production-ready
+- No database integration yet for user/session management
 
-These limitations are intentional and reflect browser security constraints.
+These limitations are expected for the current learning-focused stage of the project.
 
 ---
 
@@ -132,7 +134,7 @@ Modern browsers do not allow permanent access to local files for security reason
 - These URLs only exist during the active session
 - Reloading the page invalidates all previously loaded files
 
-Persistent storage will be introduced through a backend in future versions.
+Persistent storage and production-grade auth will be introduced incrementally in upcoming versions.
 
 ---
 
@@ -221,7 +223,6 @@ MIT License
 Eduardo B.
 
 This project is part of a personal learning journey into backend and fullstack development.
-
 
 <!-- Status badges -->
 
