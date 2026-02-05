@@ -1,3 +1,87 @@
+<!-- Badges: Galeria DRAB e Status GitHub -->
+
+<!-- Banner decorativo da galeria-drab -->
+
+<div align="center">
+
+<!-- Badges de status e tecnologias -->
+
+[![Build Status](https://github.com/eduardo-balbino/NightMusic/actions/workflows/build.yml/badge.svg)](https://github.com/eduardo-balbino/NightMusic/actions/workflows/build.yml)
+[![Lint Status](https://github.com/eduardo-balbino/NightMusic/actions/workflows/lint.yml/badge.svg)](https://github.com/eduardo-balbino/NightMusic/actions/workflows/lint.yml)
+
+</div>
+<div align="center">
+	</a>
+	<a href="https://nextjs.org">
+		<img src="https://galeria-drab.vercel.app/api/svg/badges/skills/badge-nextjs.svg?width=150" alt="Next.js" />
+	</a>
+	<a href="https://tailwindcss.com">
+		<img src="https://galeria-drab.vercel.app/api/svg/badges/skills/badge-tailwind.svg?width=150" alt="Tailwind CSS" />
+	</a>
+	<a href="https://expressjs.com">
+		<img src="https://galeria-drab.vercel.app/api/svg/badges/skills/badge-express.svg?width=150" alt="Express" />
+	</a>
+	<a href="https://www.typescriptlang.org">
+		<img src="https://galeria-drab.vercel.app/api/svg/badges/skills/badge-typescript.svg?width=150" alt="TypeScript" />
+	</a>
+	<a href="https://nodejs.org">
+		<img src="https://galeria-drab.vercel.app/api/svg/badges/skills/badge-nodejs.svg?width=150"alt="Nodejs"/>
+	</a>
+</div>
+
+**Proveniência e Autoria:** Este repositório foi criado e é mantido por Eduardo B. (uso pessoal/educacional).
+
+## Roadmap
+
+### v0.2.0 Backend Foundation
+
+- Express server setup
+- Health check endpoint
+- Static file serving
+
+### v0.3.0 File Uploads
+
+- Audio upload via API
+- Persistent file storage
+- Playlist metadata persistence
+
+### v0.4.0 Frontend and Backend Integration
+
+- Upload music from the frontend to the backend
+- Fetch playlists through the API
+- Play music directly from server URLs
+
+### Future Plans
+
+- Database integration
+- User authentication
+- Multiple playlists per user
+- Desktop application version
+
+---
+
+## Project Philosophy
+
+- Avoid unnecessary frameworks
+- Keep responsibilities clearly separated
+- Learn first, optimize later
+- Document limitations instead of hiding them
+
+---
+
+## License
+
+MIT License
+
+---
+
+## Author
+
+Eduardo B.
+
+This project is part of a personal learning journey into backend and fullstack development.
+
+
 # NightMusic
 
 NightMusic is a personal music player project focused on **learning backend fundamentals** while building a real, functional application.
@@ -8,10 +92,10 @@ The project is developed incrementally, starting with a frontend-only prototype 
 
 ## Project Goals
 
-* Learn how frontend and backend communicate (HTTP / REST)
-* Implement real file uploads and data persistence
-* Understand backend architecture and project organization
-* Build a solid foundation before adding advanced features
+- Learn how frontend and backend communicate (HTTP / REST)
+- Implement real file uploads and data persistence
+- Understand backend architecture and project organization
+- Build a solid foundation before adding advanced features
 
 This project prioritizes **learning and clarity over shortcuts**.
 
@@ -19,22 +103,22 @@ This project prioritizes **learning and clarity over shortcuts**.
 
 ## Current Version
 
-**v0.1.0 — Frontend Preview (Local Playlist)**
+**v0.1.0 Frontend Preview (Local Playlist)**
 
 This release represents an early frontend-only preview of the music player.
 
 ### Features
 
-* Local music upload
-* Interactive playlist
-* Audio playback in the browser
-* Responsive user interface
+- Local music upload
+- Interactive playlist
+- Audio playback in the browser
+- Responsive user interface
 
 ### Known Limitations
 
-* Music files do not persist after page reload
-* Songs must be re-added on every session
-* No backend or server-side storage is implemented yet
+- Music files do not persist after page reload
+- Songs must be re-added on every session
+- No backend or server-side storage is implemented yet
 
 These limitations are intentional and reflect browser security constraints.
 
@@ -44,9 +128,9 @@ These limitations are intentional and reflect browser security constraints.
 
 Modern browsers do not allow permanent access to local files for security reasons.
 
-* Audio files are loaded using temporary `blob:` URLs
-* These URLs only exist during the active session
-* Reloading the page invalidates all previously loaded files
+- Audio files are loaded using temporary `blob:` URLs
+- These URLs only exist during the active session
+- Reloading the page invalidates all previously loaded files
 
 Persistent storage will be introduced through a backend in future versions.
 
@@ -56,16 +140,16 @@ Persistent storage will be introduced through a backend in future versions.
 
 ### Frontend
 
-* HTML5
-* CSS3
-* Vanilla JavaScript
+- HTML5
+- CSS3
+- Typescript
 
 ### Backend (in progress)
 
-* Node.js
-* Express.js
-* Multer (file uploads)
-* Filesystem-based persistence (initial phase)
+- Node.js
+- Express.js
+- Multer (file uploads)
+- Filesystem-based persistence (initial phase)
 
 ---
 
@@ -75,7 +159,7 @@ Persistent storage will be introduced through a backend in future versions.
 cd backend
 npm install
 npm run dev
-```
+````
 
 Environment variables are defined in a `.env` file located at the backend root.
 
@@ -92,37 +176,37 @@ UPLOAD_DIR=src/storage/uploads
 
 ### v0.2.0 — Backend Foundation
 
-* Express server setup
-* Health check endpoint
-* Static file serving
+- Express server setup
+- Health check endpoint
+- Static file serving
 
-### v0.3.0 — File Uploads
+### v0.3.0 File Uploads
 
-* Audio upload via API
-* Persistent file storage
-* Playlist metadata persistence
+- Audio upload via API
+- Persistent file storage
+- Playlist metadata persistence
 
-### v0.4.0 — Frontend and Backend Integration
+### v0.4.0 Frontend and Backend Integration
 
-* Upload music from the frontend to the backend
-* Fetch playlists through the API
-* Play music directly from server URLs
+- Upload music from the frontend to the backend
+- Fetch playlists through the API
+- Play music directly from server URLs
 
 ### Future Plans
 
-* Database integration
-* User authentication
-* Multiple playlists per user
-* Desktop application version
+- Database integration
+- User authentication
+- Multiple playlists per user
+- Desktop application version
 
 ---
 
 ## Project Philosophy
 
-* Avoid unnecessary frameworks
-* Keep responsibilities clearly separated
-* Learn first, optimize later
-* Document limitations instead of hiding them
+- Avoid unnecessary frameworks
+- Keep responsibilities clearly separated
+- Learn first, optimize later
+- Document limitations instead of hiding them
 
 ---
 
@@ -137,3 +221,15 @@ MIT License
 Eduardo B.
 
 This project is part of a personal learning journey into backend and fullstack development.
+
+
+<!-- Status badges -->
+
+[![Build Status](https://github.com/eduardo-balbino/NightMusic/actions/workflows/build.yml/badge.svg)](https://github.com/eduardo-balbino/NightMusic/actions/workflows/build.yml)
+[![Lint Status](https://github.com/eduardo-balbino/NightMusic/actions/workflows/lint.yml/badge.svg)](https://github.com/eduardo-balbino/NightMusic/actions/workflows/lint.yml)
+[![Website Status](https://img.shields.io/website?down_color=red&down_message=down&up_message=up&url=https://galeria-drab.vercel.app)](https://galeria-drab.vercel.app)
+
+<!-- Badges do site pessoal: autor, licença, deploy e framework -->
+
+[![Deployed on Vercel](https://img.shields.io/badge/deployed%20on-Vercel-000000?style=flat&logo=vercel)](https://vercel.com)
+[![Built with Next.js](https://img.shields.io/badge/Framework-Next.js-black?logo=next.js)](https://nextjs.org)
