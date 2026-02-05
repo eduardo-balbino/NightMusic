@@ -71,18 +71,7 @@ export default function Dashboard({children}: {children: React.ReactNode}) {
   const [ready, setReady] = useState(false);
   const router = useRouter();
 
-  useEffect(() => {
-    const token = typeof window !== "undefined" ? localStorage.getItem("nm_token") : null;
-    if (!token) {
-      router.replace("/login");
-    } else {
-      setReady(true);
-    }
-  }, [router]);
-
-  if (!ready) {
-    return null;
-  }
+  
   return (
     <div className="min-h-screen grid-columns">
       <div className="logo-div"><img src={logo.src} alt="the app's logo" className="logo" /></div>
