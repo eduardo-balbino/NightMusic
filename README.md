@@ -159,7 +159,7 @@ Persistent storage will be introduced through a backend in future versions.
 cd backend
 npm install
 npm run dev
-````
+```
 
 Environment variables are defined in a `.env` file located at the backend root.
 
