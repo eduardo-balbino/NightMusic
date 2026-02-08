@@ -13,7 +13,7 @@ createdb nightmusic
 2. Aplique o schema:
 
 ```bash
-psql -d nightmusic -f backend/db/schema.sql
+psql -d nightmusic -f backend/first-schema-PostgreSQL/schema.sql
 ```
 
 > Observação: o schema habilita a extensão `pgcrypto` para usar `gen_random_uuid()`.
