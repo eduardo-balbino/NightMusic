@@ -2,7 +2,13 @@
   "name": "nightmusic-backend",
   "version": "0.1.0",
   "description": "Backend for NightMusic music player",
-  "keywords": ["music", "backend", "nodejs", "express", "api"],
+  "keywords": [
+    "music",
+    "backend",
+    "nodejs",
+    "express",
+    "api"
+  ],
   "license": "MIT",
   "author": "Eduardo B",
   "type": "module",
@@ -13,14 +19,15 @@
     "build": "tsc -p tsconfig.json"
   },
   "dependencies": {
+    "db": "^6.0.3",
     "dotenv": "^17.2.3",
     "express": "^5.2.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.11",
-    "typescript": "^5.3.0",
-    "ts-node-dev": "^2.0.0",
     "@types/express": "^4.17.17",
-    "@types/node": "^20.5.1"
+    "@types/node": "^20.5.1",
+    "nodemon": "^3.1.11",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.0"
   }
 }
