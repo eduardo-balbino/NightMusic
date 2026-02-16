@@ -1,224 +1,142 @@
-<!-- Badges: Galeria DRAB e Status GitHub -->
+# 🌙 NightMusic
 
-<!-- Banner decorativo da galeria-drab -->
+NightMusic é um projeto de estudo fullstack com foco em evolução incremental: uma interface Next.js para autenticação/player e um backend Express simples para rotas de API.
 
-<div align="center">
-
-<!-- Badges de status e tecnologias -->
-
-[![Build Status](https://github.com/eduardo-balbino/NightMusic/actions/workflows/build.yml/badge.svg)](https://github.com/eduardo-balbino/NightMusic/actions/workflows/build.yml)
-[![Lint Status](https://github.com/eduardo-balbino/NightMusic/actions/workflows/lint.yml/badge.svg)](https://github.com/eduardo-balbino/NightMusic/actions/workflows/lint.yml)
-
-</div>
-<div align="center">
-	</a>
-	<a href="https://nextjs.org">
-		<img src="https://galeria-drab.vercel.app/api/svg/badges/skills/badge-nextjs.svg?width=150" alt="Next.js" />
-	</a>
-	<a href="https://tailwindcss.com">
-		<img src="https://galeria-drab.vercel.app/api/svg/badges/skills/badge-tailwind.svg?width=150" alt="Tailwind CSS" />
-	</a>
-	<a href="https://expressjs.com">
-		<img src="https://galeria-drab.vercel.app/api/svg/badges/skills/badge-express.svg?width=150" alt="Express" />
-	</a>
-	<a href="https://www.typescriptlang.org">
-		<img src="https://galeria-drab.vercel.app/api/svg/badges/skills/badge-typescript.svg?width=150" alt="TypeScript" />
-	</a>
-	<a href="https://nodejs.org">
-		<img src="https://galeria-drab.vercel.app/api/svg/badges/skills/badge-nodejs.svg?width=150"alt="Nodejs"/>
-	</a>
-</div>
-
-**Proveniência e Autoria:** Este repositório foi criado e é mantido por Eduardo B. (uso pessoal/educacional).
-
-## Roadmap
-
-### v0.2.0 Backend Foundation
-
-- Express server setup
-- Health check endpoint
-- Static file serving
-
-### v0.3.0 File Uploads
-
-- Audio upload via API
-- Persistent file storage
-- Playlist metadata persistence
-
-### v0.4.0 Frontend and Backend Integration
-
-- Upload music from the frontend to the backend
-- Fetch playlists through the API
-- Play music directly from server URLs
-
-### Future Plans
-
-- Database integration
-- User authentication
-- Multiple playlists per user
-- Desktop application version
+> Status atual: **protótipo funcional para desenvolvimento local**, com autenticação mock e playlists de exemplo.
 
 ---
 
-## Project Philosophy
+## ✨ O que já existe hoje
 
-- Avoid unnecessary frameworks
-- Keep responsibilities clearly separated
-- Learn first, optimize later
-- Document limitations instead of hiding them
+### Frontend (Next.js)
 
----
+- Fluxo de autenticação com telas de **login**, **registro** e **recuperação de senha**.
+- Login mock via `/api/auth/login` com persistência de token em `localStorage` (`nm_token`).
+- Área autenticada em `/dashboard` com navegação entre playlists mockadas.
+- Player principal em `/` com upload local de arquivos de áudio (via `blob URL`) e controles básicos (play, pause, anterior, próximo).
 
-## License
+### Backend (Express + TypeScript)
 
-MIT License
-
----
-
-## Author
-
-Eduardo B.
-
-This project is part of a personal learning journey into backend and fullstack development.
-
-# NightMusic
-
-NightMusic is a personal music player project focused on **learning backend fundamentals** while building a real, functional application.
-
-The project is developed incrementally, starting with a frontend-only prototype and evolving into a backend-driven system using **Node.js and Express**.
+- Servidor com middleware de log e tratamento global de erros.
+- Endpoints:
+  - `GET /health` → healthcheck
+  - `GET /musics` → resposta simples da API
+  - `GET /api/error-test` → rota para validar handler de erro
 
 ---
 
-## Project Goals
+## 🧱 Stack
 
-- Learn how frontend and backend communicate (HTTP / REST)
-- Implement real file uploads and data persistence
-- Understand backend architecture and project organization
-- Build a solid foundation before adding advanced features
-
-This project prioritizes **learning and clarity over shortcuts**.
+- **Frontend:** Next.js 16, React 19, TypeScript, CSS/Tailwind (dependências instaladas)
+- **Backend:** Node.js, Express 5, TypeScript
+- **Tooling:** ESLint, Prettier, Stylelint
 
 ---
 
-## Current Version
+## 📁 Estrutura principal
 
-**v0.2.x Backend Foundation + Frontend Integration (Work in Progress)**
-
-This release already includes a backend foundation and frontend authentication flow for local development.
-
-### Features
-
-- Local music upload
-- Interactive playlist
-- Audio playback in the browser
-- Responsive user interface
-- Express backend with `/health` and `/musics` routes
-- Local auth endpoints for login/logout testing (`/api/auth/login`, `/api/auth/logout`)
-
-### Known Limitations
-
-- Music files do not persist after page reload
-- Songs must be re-added on every session
-- Authentication is currently mock-based (`user` / `password`) and not production-ready
-- No database integration yet for user/session management
-
-These limitations are expected for the current learning-focused stage of the project.
+```text
+.
+├── app/                    # Frontend (App Router)
+│   ├── api/auth/           # Endpoints mock de auth no Next
+│   ├── components/         # Componentes de UI
+│   ├── dashboard/          # Área autenticada e playlists
+│   ├── login/ register/ forgot/
+│   └── services/           # Serviços client-side (auth)
+├── backend/                # API Express em TypeScript
+│   ├── middlewares/
+│   ├── routes/
+│   └── server.ts
+├── oraculo/                # Documentação e materiais auxiliares
+└── README.md
+```
 
 ---
 
-## Technical Notes
+## 🚀 Como rodar localmente
 
-Modern browsers do not allow permanent access to local files for security reasons.
-
-- Audio files are loaded using temporary `blob:` URLs
-- These URLs only exist during the active session
-- Reloading the page invalidates all previously loaded files
-
-Persistent storage and production-grade auth will be introduced incrementally in upcoming versions.
-
----
-
-## Tech Stack
-
-### Frontend
-
-- HTML5
-- CSS3
-- Typescript
-
-### Backend (in progress)
-
-- Node.js
-- Express.js
-- Multer (file uploads)
-- Filesystem-based persistence (initial phase)
-
----
-
-## Development Setup
+### 1) Instalar dependências
 
 ```bash
-cd backend
 npm install
+```
+
+### 2) Subir o frontend (porta 3001)
+
+```bash
 npm run dev
 ```
 
-Environment variables are defined in a `.env` file located at the backend root.
+### 3) Subir o backend (porta 3000)
 
-Example:
+```bash
+npm run backend:dev
+```
 
-```env
-PORT=3000
-UPLOAD_DIR=src/storage/uploads
+> O frontend usa rewrites para encaminhar `/musics/*` e `/api/*` para `http://localhost:3000`.
+
+---
+
+## 🔐 Credenciais de desenvolvimento
+
+Para testar login no estado atual:
+
+- **Usuário:** `user`
+- **Senha:** `password`
+
+Ao autenticar, o token mock é salvo no navegador (`localStorage`) e o usuário é redirecionado para `/dashboard`.
+
+---
+
+## 🧪 Scripts úteis
+
+```bash
+npm run dev              # Next.js em localhost:3001
+npm run build            # build do frontend
+npm run start            # start do build frontend
+npm run backend:dev      # backend express em modo dev
+npm run backend:build    # build TypeScript geral
+npm run backend:start    # start backend compilado
+npm run lint             # ESLint (com --fix)
+npm run format           # Prettier
+npm run prettier:check   # valida formatação
+npm run stylelint        # valida estilos
+npm run stylelint:fix    # corrige estilos
+```
+
+Também existem scripts de apoio para o Oráculo:
+
+```bash
+npm run diagnosticar
+npm run formatar
+npm run otimizar
 ```
 
 ---
 
-## Roadmap
+## ⚠️ Limitações conhecidas
 
-### v0.2.0 — Backend Foundation
-
-- Express server setup
-- Health check endpoint
-- Static file serving
-
-### v0.3.0 File Uploads
-
-- Audio upload via API
-- Persistent file storage
-- Playlist metadata persistence
-
-### v0.4.0 Frontend and Backend Integration
-
-- Upload music from the frontend to the backend
-- Fetch playlists through the API
-- Play music directly from server URLs
-
-### Future Plans
-
-- Database integration
-- User authentication
-- Multiple playlists per user
-- Desktop application version
+- Autenticação é **mock** (não há usuário real, JWT real, refresh token ou sessão segura).
+- Playlists do dashboard ainda são dados fixos em memória.
+- Upload de música na página principal depende de `blob:` URL e não persiste após recarregar.
+- Existem artefatos legados (ex.: pasta `app/pages`) convivendo com App Router.
 
 ---
 
-## Project Philosophy
+## 🛣️ Próximos passos sugeridos
 
-- Avoid unnecessary frameworks
-- Keep responsibilities clearly separated
-- Learn first, optimize later
-- Document limitations instead of hiding them
-
----
-
-## License
-
-MIT License
+- Integrar autenticação real (cadastro, login, recuperação de senha).
+- Persistir playlists/músicas em banco de dados.
+- Unificar totalmente a arquitetura em App Router.
+- Expandir API backend para operações CRUD de playlists e faixas.
 
 ---
 
-## Author
+## 📄 Licença
+
+MIT.
+
+## 👤 Autor
 
 Eduardo B.
 
