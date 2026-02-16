@@ -123,7 +123,7 @@ npm run otimizar
 
 ---
 
-## 🛣️ Próximos passos sugeridos
+## 🛣️ Próximos passos
 
 - Integrar autenticação real (cadastro, login, recuperação de senha).
 - Persistir playlists/músicas em banco de dados.
