@@ -233,4 +233,9 @@ This project is part of a personal learning journey into backend and fullstack d
 <!-- Badges do site pessoal: autor, licença, deploy e framework -->
 
 [![Deployed on Vercel](https://img.shields.io/badge/deployed%20on-Vercel-000000?style=flat&logo=vercel)](https://vercel.com)
-[![Built with Next.js](https://img.shields.io/badge/Framework-Next.js-black?logo=next.js)](https://nextjs.org)
+[function greet(name: string): string {
+  return `Hello, ${name}!`;
+}
+
+const message: string = greet("World");
+console.log(message);![Built with Next.js](https://img.shields.io/badge/Framework-Next.js-black?logo=next.js)](https://nextjs.org)
