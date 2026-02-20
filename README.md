@@ -29,7 +29,7 @@ NightMusic é um projeto de estudo fullstack com foco em evolução incremental:
 
 - **Frontend:** Next.js 16, React 19, TypeScript, CSS/Tailwind (dependências instaladas)
 - **Backend:** Node.js, Express 5, TypeScript
-- **Tooling:** ESLint, Prettier, Stylelint
+- **Tooling:** Prettier
 
 ---
 
@@ -97,11 +97,8 @@ npm run start            # start do build frontend
 npm run backend:dev      # backend express em modo dev
 npm run backend:build    # build TypeScript geral
 npm run backend:start    # start backend compilado
-npm run lint             # ESLint (com --fix)
 npm run format           # Prettier
 npm run prettier:check   # valida formatação
-npm run stylelint        # valida estilos
-npm run stylelint:fix    # corrige estilos
 ```
 
 Também existem scripts de apoio para o Oráculo:
@@ -145,7 +142,6 @@ This project is part of a personal learning journey into backend and fullstack d
 <!-- Status badges -->
 
 [![Build Status](https://github.com/eduardo-balbino/NightMusic/actions/workflows/build.yml/badge.svg)](https://github.com/eduardo-balbino/NightMusic/actions/workflows/build.yml)
-[![Lint Status](https://github.com/eduardo-balbino/NightMusic/actions/workflows/lint.yml/badge.svg)](https://github.com/eduardo-balbino/NightMusic/actions/workflows/lint.yml)
 [![Website Status](https://img.shields.io/website?down_color=red&down_message=down&up_message=up&url=https://galeria-drab.vercel.app)](https://galeria-drab.vercel.app)
 
 <!-- Badges do site pessoal: autor, licença, deploy e framework -->
