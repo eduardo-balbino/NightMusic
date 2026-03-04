@@ -97,8 +97,6 @@ npm run start            # start do build frontend
 npm run backend:dev      # backend express em modo dev
 npm run backend:build    # build TypeScript geral
 npm run backend:start    # start backend compilado
-npm run format           # Prettier
-npm run prettier:check   # valida formatação
 ```
 
 Também existem scripts de apoio para o Oráculo:
