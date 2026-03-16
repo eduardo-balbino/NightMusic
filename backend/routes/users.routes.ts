@@ -58,4 +58,69 @@ router.post(
   },
 );
 
+router.get(
+  "/",
+  async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ) => {
+    try {
+      const result = await pool.query<{
+        user_id: string;
+        email: string;
+        display_name: string;
+        created_at: string;
+      }>(
+        `
+        SELECT user_id, email, display_name, created_at
+        FROM users
+        ORDER BY created_at DESC
+        `
+      );
+
+      return res.json({
+        users: result.rows,
+      });
+
+    } catch (error) {
+      return next(error);
+    }
+  }
+);
+
+router.get(
+  "/:id",
+  async (
+    req: Request<{ id: string }>,
+    res: Response,
+    next: NextFunction
+  ) => {
+    const { id } = req.params;
+
+    try {
+      const result = await pool.query<{
+        user_id: string;
+        email: string;
+        display_name: string;
+        created_at: string;
+      }>(
+        `
+        SELECT user_id, email, display_name, created_at
+        FROM users
+        WHERE user_id = $1
+        `,
+        [id]
+      );
+
+      return res.json({
+        user: result.rows[0],
+      });
+
+    } catch (error) {
+      return next(error);
+    }
+  }
+);
+
 export default router;
