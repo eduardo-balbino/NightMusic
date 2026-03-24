@@ -1,6 +1,5 @@
 import express from "express";
 import "dotenv/config";
-import musicRouter from "./routes/musics.routes.js";
 import usersRouter from "./routes/users.routes.js";
 import { checkDatabaseConnection } from "./config.database.js";
 import { logger } from "./middlewares/logger.middlewares.js";
@@ -12,7 +11,6 @@ const PORT = Number(process.env.PORT) || 3000;
 app.use(logger);
 
 app.use(express.json());
-app.use("/musics", musicRouter);
 app.use("/users", usersRouter);
 
 app.get("/health", (_req, res) => {
