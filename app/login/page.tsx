@@ -1,4 +1,4 @@
-import logo from "../assets/icons/Iconarchive-Fairy-Tale-Dark-Moon.512.png"
+import logo from "../assets/icons/Iconarchive-Fairy-Tale-Dark-Moon.512.png";
 import AuthTabs from "@components/AuthTabs";
 import React from "react";
 
