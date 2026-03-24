@@ -8,19 +8,19 @@ import { errorHandler } from "./middlewares/error.middlewares.js";
 const app = express();
 const PORT = Number(process.env.PORT) || 3000;
 
+// Middleware
 app.use(logger);
 
 app.use(express.json());
 app.use("/users", usersRouter);
-
 app.get("/health", (_req, res) => {
   res.status(200).send("ok");
 });
-
 app.get("/api/error-test", (_req, _res) => {
   throw new Error("Test error");
 });
 
+// Middleware
 app.use(errorHandler);
 
 async function startServer(): Promise<void> {
