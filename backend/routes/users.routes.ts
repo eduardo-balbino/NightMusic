@@ -1,5 +1,8 @@
 import { Router, Request, Response, NextFunction } from "express";
+import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
 import { pool } from "../config.database.js";
+import { error } from "console";
 
 type CreateUserBody = {
   email?: string;
@@ -122,5 +125,80 @@ router.get(
     }
   }
 );
+
+router.post(
+  "/auth/login",
+  async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ) => {
+    try {
+      const { email, password } = req.body;
+
+      const result = await pool.query<{
+        user_id: string;
+        email: string;
+        password_hash: string;
+        display_name: string;
+      }>(
+        "SELECT user_id, email, password_hash, display_name FROM users WHERE email = $1",
+        [email]
+      )
+
+      const user = result.rows[0];
+
+      const isValidPassword = await bcrypt.compare(
+        password,
+        user.password_hash
+      );
+
+      const token = jwt.sign(
+        {
+          userId: user.user_id,
+          email: user.email
+        },
+        process.env.JWT_SECRET as string,
+        {
+          expiresIn: "1h"
+        }
+      );
+
+      if (!email || !password) {
+        return res.status(400).json({
+          message: "email or password is invalid"
+        });
+      }
+
+      if (email === "dev") {
+        return res.status(400).json({
+          message: "bro do you kindding me"
+        })
+      };
+
+      if (result.rows.length === 0) {
+        return res.status(400).json({
+          message: "Invalid credentials"
+        })
+      }
+
+      return res.json({
+        message: "Login sucessful",
+        token,
+        user: {
+          id: user.user_id,
+          email: user.email,
+          displayName: user.display_name
+        }
+      });
+
+    } catch {
+      console.error("Login error:", error);
+      return res.status(500).json({
+        message: "internal server error"
+      });
+    }
+  });
+
 
 export default router;
