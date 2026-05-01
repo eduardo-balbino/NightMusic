@@ -9,10 +9,7 @@
     "start": "next start -p 3001",
     "backend:dev": "ts-node-dev --respawn --transpile-only --loader ts-node/esm backend/src/server.ts",
     "backend:build": "tsc -p tsconfig.json",
-    "backend:start": "node dist/backend/src/server.js",
-    "diagnosticar": "oraculo diagnosticar",
-    "formatar": "oraculo formatar --write",
-    "otimizar": "oraculo otimizar-svg"
+    "backend:start": "node dist/backend/src/server.js"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
