@@ -30,7 +30,7 @@ NightMusic é um projeto de estudo fullstack com foco em evolução incremental:
 - **Frontend:** Next.js 16, React 19, TypeScript
 - **Backend:** Node.js, Express 5, TypeScript
 - **Estilos:** CSS global + Tailwind (dependências instaladas)
-- **Tooling:** Prettier + Oráculo CLI
+- **Tooling:** Prettier
 
 ---
 
@@ -48,7 +48,6 @@ NightMusic é um projeto de estudo fullstack com foco em evolução incremental:
 │   ├── middlewares/
 │   ├── routes/
 │   └── server.ts
-├── oraculo/                # Documentação e materiais auxiliares
 └── README.md
 ```
 
@@ -98,9 +97,6 @@ npm run start            # start do build frontend
 npm run backend:dev      # backend express em modo dev
 npm run backend:build    # build TypeScript geral
 npm run backend:start    # start backend compilado
-npm run diagnosticar     # inspeções do Oráculo
-npm run formatar         # formatação automática
-npm run otimizar         # otimização de SVGs
 ```
 
 ---
