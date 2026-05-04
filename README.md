@@ -46,6 +46,8 @@ NightMusic é um projeto de estudo fullstack com foco em evolução incremental:
 │   └── services/           # Serviços client-side (auth)
 ├── backend/                # API Express em TypeScript
 │   ├── middlewares/
+│   ├── controllers/
+│   ├── data/
 │   ├── routes/
 │   └── server.ts
 └── README.md
