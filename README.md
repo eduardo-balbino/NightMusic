@@ -69,11 +69,18 @@ npm run dev
 
 ### 3) Subir o backend
 
+Atualmente, o script `backend:dev` no `package.json` aponta para `backend/src/server.ts`, mas o arquivo está em `backend/server.ts`.
+
+Use um destes caminhos:
+
 ```bash
+# Opção temporária (sem alterar scripts)
+npx ts-node-dev --respawn --transpile-only --loader ts-node/esm backend/server.ts
+
+# Opção definitiva (recomendada)
+# Ajuste o script backend:dev no package.json para backend/server.ts e rode:
 npm run backend:dev
 ```
-
-> Se ocorrer erro relacionado ao caminho `backend/src/server.ts`, atualize o script `backend:dev` no `package.json` para apontar para `backend/server.ts`.
 
 ---
 
@@ -94,7 +101,7 @@ Ao autenticar, o token mock é salvo no navegador e o usuário é redirecionado 
 npm run dev              # Next.js em localhost:3001
 npm run build            # build do frontend
 npm run start            # start do build frontend
-npm run backend:dev      # backend express em modo dev
+npm run backend:dev      # backend express em modo dev (requer ajuste de caminho no script)
 npm run backend:build    # build TypeScript geral
 npm run backend:start    # start backend compilado
 ```
