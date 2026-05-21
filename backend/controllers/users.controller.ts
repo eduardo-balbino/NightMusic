@@ -3,6 +3,7 @@ import {
   getUserById,
   InvalidCredentialsError,
   listUsers,
+  listDisplayName,
   loginUser,
   LoginUserInput,
   registerUser,
@@ -70,6 +71,20 @@ export async function listUsersController(
     const users = await listUsers();
 
     return res.json({ users });
+  } catch (error) {
+    return next(error);
+  }
+}
+
+export async function listDisplay_NameController(
+  req: Request<{ id: string }>,
+  res: Response,
+  next: NextFunction,
+) {
+  try {
+    const display_name = await listDisplayName(req.params.id);
+
+    return res.json({ display_name });
   } catch (error) {
     return next(error);
   }
