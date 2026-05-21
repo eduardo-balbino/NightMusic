@@ -4,6 +4,7 @@ import {
   listUsersController,
   loginUserController,
   registerUserController,
+  listDisplay_NameController
 } from "../controllers/users.controller.js";
 import {
   validateLoginUser,
@@ -15,6 +16,7 @@ const router = Router();
 router.post("/auth/register", validateRegisterUser, registerUserController);
 router.post("/auth/login", validateLoginUser, loginUserController);
 router.get("/", listUsersController);
+router.get("/name/:id", listDisplay_NameController);
 router.get("/:id", getUserByIdController);
 
 export default router;

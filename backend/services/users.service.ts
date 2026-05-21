@@ -9,6 +9,10 @@ export type User = {
   created_at?: string;
 };
 
+export type DisplayName = {
+  display_name: string;
+}
+
 type UserWithPassword = User & {
   password_hash: string;
 };
@@ -138,6 +142,20 @@ export async function listUsers(): Promise<User[]> {
   );
 
   return result.rows;
+}
+
+export async function listDisplayName(
+  display_name: string
+): Promise<DisplayName | undefined> {
+
+  const result = await pool.query<DisplayName>(
+    `SELECT display_name
+     FROM users
+     WHERE display_name = $1`,
+    [display_name]
+  );
+
+  return result.rows[0];
 }
 
 export async function getUserById(id: string): Promise<User | undefined> {
