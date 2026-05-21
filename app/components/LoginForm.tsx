@@ -21,6 +21,7 @@ export default function LoginForm() {
       const data = await login({ email, password });
       if (typeof window !== "undefined") {
         localStorage.setItem("nm_token", data.token);
+        localStorage.setItem("nm_user", JSON.stringify(data.user));
       }
       router.push("/dashboard");
     } catch {

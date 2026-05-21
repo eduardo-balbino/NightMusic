@@ -11,7 +11,7 @@ export type User = {
 
 export type DisplayName = {
   display_name: string;
-}
+};
 
 type UserWithPassword = User & {
   password_hash: string;
@@ -145,14 +145,13 @@ export async function listUsers(): Promise<User[]> {
 }
 
 export async function listDisplayName(
-  display_name: string
+  id: string,
 ): Promise<DisplayName | undefined> {
-
   const result = await pool.query<DisplayName>(
     `SELECT display_name
      FROM users
-     WHERE display_name = $1`,
-    [display_name]
+     WHERE user_id = $1`,
+    [id],
   );
 
   return result.rows[0];

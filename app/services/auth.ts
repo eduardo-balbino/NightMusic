@@ -1,7 +1,9 @@
 type LoginCreds = { email: string; password: string };
 type RegisterCreds = { email: string; password: string; displayName: string };
+type AuthUser = { id: string; email: string; displayName: string };
+type LoginResponse = { token: string; user: AuthUser };
 
-export async function login(creds: LoginCreds) {
+export async function login(creds: LoginCreds): Promise<LoginResponse> {
   const res = await fetch("/api/auth/login", {
     method: "POST",
     headers: { "Content-Type": "application/json" },

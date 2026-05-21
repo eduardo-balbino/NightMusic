@@ -9,6 +9,7 @@ type Credentials = {
 
 type User = {
   id: string;
+  displayName?: string;
   name?: string;
   email?: string;
 };
@@ -18,7 +19,8 @@ export const useAuth = () => {
 
   const login = async (credentials: Credentials): Promise<User> => {
     try {
-      const userData: User = await loginService(credentials);
+      const response = await loginService(credentials);
+      const userData: User = response.user;
       setUser(userData);
       return userData;
     } catch {
@@ -33,4 +35,3 @@ export const useAuth = () => {
 
   return { user, login, logout };
 };
-
