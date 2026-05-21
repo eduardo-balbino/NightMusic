@@ -3,7 +3,7 @@ import { login as loginService, logout as logoutService } from "@services/auth.j
 
 // Local minimal types to avoid unresolved module '@types/type' — adjust fields as needed
 type Credentials = {
-  username: string;
+  email: string;
   password: string;
 };
 
