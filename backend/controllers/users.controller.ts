@@ -78,7 +78,7 @@ export async function listUsersController(
 export async function getUserByIdController(
   req: Request<{ id: string }>,
   res: Response,
-  next: NextFunction,
+  next: NextFunction, 
 ) {
   try {
     const user = await getUserById(req.params.id);

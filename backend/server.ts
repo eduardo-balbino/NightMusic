@@ -24,9 +24,7 @@ app.use((req, res, next) => {
 });
 
 app.use("/users", usersRouter);
-app.get("/health", (_req, res) => {
-  res.status(200).send("ok");
-});
+
 app.get("/api/error-test", (_req, _res) => {
   throw new Error("Test error");
 });

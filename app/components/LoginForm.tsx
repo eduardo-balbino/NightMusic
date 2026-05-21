@@ -7,7 +7,7 @@ import { login } from "@services/auth.js";
 import Link from "next/link";
 
 export default function LoginForm() {
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -18,7 +18,7 @@ export default function LoginForm() {
     setError("");
     setLoading(true);
     try {
-      const data = await login({ username, password });
+      const data = await login({ email, password });
       if (typeof window !== "undefined") {
         localStorage.setItem("nm_token", data.token);
       }
@@ -43,9 +43,9 @@ export default function LoginForm() {
 
         <div className="flex flex-col gap-2">
           <TextInput
-            label="Usuário"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            label="E-mail"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             className=""
           />
           <TextInput
