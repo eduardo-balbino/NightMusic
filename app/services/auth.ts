@@ -1,15 +1,36 @@
-type Creds = { username: string; password: string };
+type LoginCreds = { email: string; password: string };
+type RegisterCreds = { email: string; password: string; displayName: string };
 
-export async function login(creds: Creds) {
+export async function login(creds: LoginCreds) {
   const res = await fetch("/api/auth/login", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(creds),
   });
+
+  const payload = await res.json();
+
   if (!res.ok) {
-    throw new Error("Unauthorized");
+    throw new Error(payload.message || "Unauthorized");
   }
-  return res.json();
+
+  return payload;
+}
+
+export async function register(creds: RegisterCreds) {
+  const res = await fetch("/api/auth/register", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(creds),
+  });
+
+  const payload = await res.json();
+
+  if (!res.ok) {
+    throw new Error(payload.message || "Registration failed");
+  }
+
+  return payload;
 }
 
 export async function logout() {
