@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { register } from "@services/auth.js";
 
 export default function RegisterForm() {
   const router = useRouter();
@@ -50,8 +51,7 @@ export default function RegisterForm() {
     }
     setLoading(true);
     try {
-      // Chame a API de registro aqui.
-      // Ex: await fetch('/api/auth/register', { method: 'POST', body: JSON.stringify({ name, email, password }) })
+      await register({ email, password, displayName: name });
       router.push("/login");
     } catch {
       setErrors({ form: "Erro ao registrar. Tente novamente." });
