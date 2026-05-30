@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev -p 3001",
     "build": "next build",
-    "start": "next start -p 3001",
+    "start": "next start -p ${PORT:-3001}",
     "backend:dev": "ts-node-dev --respawn --transpile-only --loader ts-node/esm backend/src/server.ts",
     "backend:build": "tsc -p tsconfig.json",
     "backend:start": "node dist/backend/src/server.js",
