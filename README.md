@@ -86,6 +86,26 @@ npm run backend:dev
 
 ---
 
+
+## 🚢 Deploy do frontend
+
+O frontend está preparado para build de produção com Next.js:
+
+```bash
+npm run build
+npm run start
+```
+
+Para plataformas que definem a porta automaticamente, o script `start` respeita `PORT` e usa `3001` como fallback local.
+
+Se o frontend precisar encaminhar chamadas para uma API Express hospedada separadamente, configure a variável de ambiente abaixo no provedor de deploy:
+
+```bash
+API_BASE_URL=https://sua-api.example.com
+```
+
+Quando `API_BASE_URL` não está configurada, o build não cria rewrites para `localhost`, evitando chamadas quebradas em produção e mantendo ativas as rotas internas do Next em `/api/auth/*`.
+
 ## 🔐 Credenciais de desenvolvimento (mock)
 
 Para testar login no estado atual:
