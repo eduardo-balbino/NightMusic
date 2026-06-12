@@ -1,6 +1,5 @@
 tests
 architecture-folder.txt
-.env
 node_modules
 .oraculo
 .next
@@ -12,4 +11,30 @@ next-env.d.ts
 .idea
 *.log
 *.lock
+
+# Environment and local secret files
+.env
+.env.*
+*.env
+*.env.*
 .env.db
+
+# Database dumps and backups
+*.sql
+*.dump
+*.backup
+backup.*
+
+# Key and certificate material
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cert
+*.jks
+*.keystore
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
